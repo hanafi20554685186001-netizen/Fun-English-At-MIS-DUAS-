@@ -1,0 +1,2341 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruang Belajar Bahasa Inggris — Kelas 6 SD</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Nunito & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Nunito:wght@600;700;800;900&amp;display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Nunito', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            },
+            sunny: {
+              100: '#fef3c7',
+              400: '#fbbf24',
+              500: '#f59e0b',
+            },
+            mint: {
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f7fb;
+      color: #1e293b;
+      -webkit-tap-highlight-color: transparent;
+    }
+    h1, h2, h3, h4, .font-display {
+      font-family: 'Nunito', sans-serif;
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    .tab-active {
+      background-color: #2563eb;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    }
+    .fade-in {
+      animation: fadeIn 0.25s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-bottom-10{bottom:-2.5rem}.-right-10{right:-2.5rem}.right-4{right:1rem}.top-0{top:0px}.top-4{top:1rem}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-1{margin-top:0.25rem;margin-bottom:0.25rem}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.ml-1{margin-left:0.25rem}.mr-1{margin-right:0.25rem}.mt-12{margin-top:3rem}.mr-1\.5{margin-right:0.375rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-20{height:5rem}.h-3{height:0.75rem}.h-64{height:16rem}.h-full{height:100%}.h-6{height:1.5rem}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-20{width:5rem}.w-64{width:16rem}.w-full{width:100%}.w-6{width:1.5rem}.min-w-0{min-width:0px}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-blue-100{--tw-border-opacity:1;border-color:rgb(219 234 254 / var(--tw-border-opacity, 1))}.border-blue-600{--tw-border-opacity:1;border-color:rgb(37 99 235 / var(--tw-border-opacity, 1))}.border-emerald-200\/60{border-color:rgb(167 243 208 / 0.6)}.border-rose-200{--tw-border-opacity:1;border-color:rgb(254 205 211 / var(--tw-border-opacity, 1))}.border-rose-200\/60{border-color:rgb(254 205 211 / 0.6)}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/60{border-color:rgb(226 232 240 / 0.6)}.border-slate-200\/70{border-color:rgb(226 232 240 / 0.7)}.border-slate-200\/80{border-color:rgb(226 232 240 / 0.8)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-emerald-300{--tw-border-opacity:1;border-color:rgb(110 231 183 / var(--tw-border-opacity, 1))}.border-white\/40{border-color:rgb(255 255 255 / 0.4)}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-50\/80{background-color:rgb(255 251 235 / 0.8)}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.bg-rose-50{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900\/50{background-color:rgb(15 23 42 / 0.5)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/15{background-color:rgb(255 255 255 / 0.15)}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-500{--tw-gradient-from:#3b82f6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 130 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-blue-700{--tw-gradient-to:rgb(29 78 216 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #1d4ed8 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-emerald-500{--tw-gradient-to:#10b981 var(--tw-gradient-to-position)}.to-indigo-600{--tw-gradient-to:#4f46e5 var(--tw-gradient-to-position)}.to-indigo-800{--tw-gradient-to:#3730a3 var(--tw-gradient-to-position)}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.pb-3{padding-bottom:0.75rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pb-4{padding-bottom:1rem}.text-left{text-align:left}.text-center{text-align:center}.font-display{font-family:Nunito, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-blue-100{--tw-text-opacity:1;color:rgb(219 234 254 / var(--tw-text-opacity, 1))}.text-blue-100\/90{color:rgb(219 234 254 / 0.9)}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234 / var(--tw-text-opacity, 1))}.text-rose-600{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.decoration-amber-300\/50{-webkit-text-decoration-color:rgb(252 211 77 / 0.5);text-decoration-color:rgb(252 211 77 / 0.5)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-amber-500\/25{--tw-shadow-color:rgb(245 158 11 / 0.25);--tw-shadow:var(--tw-shadow-colored)}.shadow-blue-500\/20{--tw-shadow-color:rgb(59 130 246 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-blue-600\/25{--tw-shadow-color:rgb(37 99 235 / 0.25);--tw-shadow:var(--tw-shadow-colored)}.shadow-blue-900\/10{--tw-shadow-color:rgb(30 58 138 / 0.1);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-600\/20{--tw-shadow-color:rgb(5 150 105 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-blue-600\/20{--tw-shadow-color:rgb(37 99 235 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.blur-2xl{--tw-blur:blur(40px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:border-amber-200:hover{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.hover\:border-blue-200:hover{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.hover\:border-blue-300:hover{--tw-border-opacity:1;border-color:rgb(147 197 253 / var(--tw-border-opacity, 1))}.hover\:border-emerald-200:hover{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.hover\:border-purple-200:hover{--tw-border-opacity:1;border-color:rgb(233 213 255 / var(--tw-border-opacity, 1))}.hover\:bg-amber-300:hover{--tw-bg-opacity:1;background-color:rgb(252 211 77 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-50:hover{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-600:hover{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-100:hover{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-50:hover{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-50:hover{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-700:hover{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-50:hover{--tw-bg-opacity:1;background-color:rgb(250 245 255 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-100:hover{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-700:hover{--tw-bg-opacity:1;background-color:rgb(190 18 60 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-900:hover{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/25:hover{background-color:rgb(255 255 255 / 0.25)}.hover\:bg-blue-50\/40:hover{background-color:rgb(239 246 255 / 0.4)}.hover\:from-blue-700:hover{--tw-gradient-from:#1d4ed8 var(--tw-gradient-from-position);--tw-gradient-to:rgb(29 78 216 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-indigo-700:hover{--tw-gradient-to:#4338ca var(--tw-gradient-to-position)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-4:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-amber-300\/50:focus{--tw-ring-color:rgb(252 211 77 / 0.5)}.focus\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246 / var(--tw-ring-opacity, 1))}.disabled\:opacity-40:disabled{opacity:0.4}.group:hover .group-hover\:text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:h-12{height:3rem}.sm\:h-20{height:5rem}.sm\:w-12{width:3rem}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:gap-2{gap:0.5rem}.sm\:self-auto{align-self:auto}.sm\:p-5{padding:1.25rem}.sm\:p-8{padding:2rem}.sm\:px-0{padding-left:0px;padding-right:0px}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:py-8{padding-top:2rem;padding-bottom:2rem}.sm\:text-left{text-align:left}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-6xl{font-size:3.75rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:col-span-2{grid-column:span 2 / span 2}.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style></head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Toast / Custom Notification Box (Pengganti alert()) -->
+  <div id="toast-container" class="fixed top-4 right-4 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+  <!-- Custom Confirmation Modal (Pengganti confirm()) -->
+  <div id="confirm-modal" class="fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-slate-100 fade-in">
+      <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </div>
+      <h3 id="confirm-title" class="text-xl font-bold text-slate-800 mb-2">Konfirmasi</h3>
+      <p id="confirm-message" class="text-slate-600 text-sm mb-6 leading-relaxed">Apakah kamu yakin ingin melakukan tindakan ini?</p>
+      <div class="flex gap-3 justify-end">
+        <button id="confirm-cancel-btn" class="px-4 py-2.5 rounded-xl font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200 transition">Batal</button>
+        <button id="confirm-ok-btn" class="px-5 py-2.5 rounded-xl font-semibold text-white bg-rose-600 hover:bg-rose-700 shadow-sm transition">Ya, Lanjutkan</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigasi Utama -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <!-- Logo & Nama Aplikasi -->
+        <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('beranda')">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white flex items-center justify-center text-lg sm:text-xl shadow-md shadow-blue-500/20">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <h1 class="font-display font-extrabold text-base sm:text-xl text-slate-800 leading-tight">Ruang Belajar Bahasa Inggris</h1>
+            <p class="text-xs font-medium text-blue-600">Kelas 6 SD • Mandiri &amp; Interaktif</p>
+          </div>
+        </div>
+
+        <!-- Badge Nama Siswa (Desktop) -->
+        <div class="hidden md:flex items-center gap-2 bg-blue-50 border border-blue-100 px-3.5 py-1.5 rounded-2xl">
+          <i class="fa-solid fa-user-astronaut text-blue-600"></i>
+          <span id="header-student-name" class="text-sm font-semibold text-slate-700">Siswa Kelas 6</span>
+        </div>
+      </div>
+
+      <!-- Menu Navigasi Responsif (Horizontal Scroll di HP) -->
+      <nav class="flex items-center gap-1.5 sm:gap-2 pb-3 overflow-x-auto no-scrollbar">
+        <button onclick="switchTab('beranda')" id="nav-beranda" class="nav-btn flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold whitespace-nowrap transition-all tab-active">
+          <i class="fa-solid fa-house"></i>
+          <span>Beranda</span>
+        </button>
+        <button onclick="switchTab('materi')" id="nav-materi" class="nav-btn bg-slate-100 text-slate-600 hover:bg-slate-200 flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold whitespace-nowrap transition-all">
+          <i class="fa-solid fa-book-open"></i>
+          <span>Materi Belajar</span>
+        </button>
+        <button onclick="switchTab('contoh')" id="nav-contoh" class="nav-btn bg-slate-100 text-slate-600 hover:bg-slate-200 flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold whitespace-nowrap transition-all">
+          <i class="fa-solid fa-lightbulb"></i>
+          <span>Contoh &amp; Pembahasan</span>
+        </button>
+        <button onclick="switchTab('latihan')" id="nav-latihan" class="nav-btn bg-slate-100 text-slate-600 hover:bg-slate-200 flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold whitespace-nowrap transition-all">
+          <i class="fa-solid fa-pen-to-square"></i>
+          <span>Latihan &amp; Evaluasi</span>
+        </button>
+        <button onclick="switchTab('riwayat')" id="nav-riwayat" class="nav-btn bg-slate-100 text-slate-600 hover:bg-slate-200 flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold whitespace-nowrap transition-all">
+          <i class="fa-solid fa-trophy"></i>
+          <span>Progres &amp; Nilai</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Konten Utama -->
+  <main class="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-8">
+
+    <!-- ==================== TAB 1: BERANDA / DASHBOARD ==================== -->
+    <section id="tab-beranda" class="tab-content fade-in space-y-6">
+      <!-- Hero Banner & Profil Siswa -->
+      <div class="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 rounded-3xl p-6 sm:p-8 text-white shadow-xl shadow-blue-900/10 relative overflow-hidden">
+        <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+          <div class="lg:col-span-2 space-y-3">
+            <span class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase">
+              <i class="fa-solid fa-star text-amber-300"></i> Selamat Datang di Kelas Bahasa Inggris!
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold leading-tight">
+              Halo, <span id="hero-student-name" class="text-amber-300 underline decoration-amber-300/50">Siswa Kelas 6</span>! 👋
+            </h2>
+            <p class="text-blue-100 text-sm sm:text-base max-w-xl leading-relaxed">
+              Ayo pelajari materi Bahasa Inggris Kelas 6 SD dengan cara yang seru, dengarkan pelafalannya, pahami contoh soal bertahap, dan uji kemampuanmu!
+            </p>
+            <div class="pt-2 flex flex-wrap gap-3">
+              <button onclick="switchTab('materi')" class="px-5 py-3 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-900 font-extrabold text-sm shadow-lg shadow-amber-500/25 transition flex items-center gap-2">
+                <i class="fa-solid fa-book-open"></i> Mulai Baca Materi
+              </button>
+              <button onclick="switchTab('latihan')" class="px-5 py-3 rounded-2xl bg-white/15 hover:bg-white/25 text-white font-bold text-sm backdrop-blur-sm border border-white/20 transition flex items-center gap-2">
+                <i class="fa-solid fa-rocket"></i> Langsung Latihan Soal
+              </button>
+            </div>
+          </div>
+
+          <!-- Kartu Edit Nama Siswa -->
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 space-y-3">
+            <label for="input-student-name" class="block text-xs font-bold uppercase tracking-wider text-blue-100">
+              <i class="fa-solid fa-id-card mr-1"></i> Kartu Pelajar Mandiri
+            </label>
+            <input type="text" id="input-student-name" placeholder="Ketik namamu di sini..." maxlength="30" class="w-full px-4 py-2.5 rounded-xl bg-white text-slate-800 font-semibold text-sm focus:outline-none focus:ring-4 focus:ring-amber-300/50">
+            <button onclick="saveStudentName()" class="w-full py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-sm transition shadow-md">
+              <i class="fa-solid fa-check mr-1"></i> Simpan Nama
+            </button>
+            <p class="text-[11px] text-blue-100/90 text-center">Nama &amp; nilai otomatis tersimpan di HP/komputermu.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ringkasan Statistik Progres -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white p-5 rounded-3xl border border-slate-200/80 shadow-sm flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl shrink-0">
+            <i class="fa-solid fa-book-bookmark"></i>
+          </div>
+          <div>
+            <p class="text-xs font-semibold text-slate-500">Materi Selesai</p>
+            <p class="text-xl sm:text-2xl font-extrabold text-slate-800"><span id="stat-materi">0</span>/6 Bab</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-200/80 shadow-sm flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl shrink-0">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <div>
+            <p class="text-xs font-semibold text-slate-500">Latihan Selesai</p>
+            <p class="text-xl sm:text-2xl font-extrabold text-slate-800"><span id="stat-kuis">0</span> Kali</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-200/80 shadow-sm flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl shrink-0">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <div>
+            <p class="text-xs font-semibold text-slate-500">Nilai Tertinggi</p>
+            <p class="text-xl sm:text-2xl font-extrabold text-slate-800" id="stat-tertinggi">-</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-slate-200/80 shadow-sm flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl shrink-0">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <div>
+            <p class="text-xs font-semibold text-slate-500">Rata-rata Nilai</p>
+            <p class="text-xl sm:text-2xl font-extrabold text-slate-800" id="stat-rata">-</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panduan Langkah Belajar Mandiri -->
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+        <h3 class="text-xl font-extrabold text-slate-800 mb-1">Alur Belajar Mandiri yang Disarankan</h3>
+        <p class="text-sm text-slate-500 mb-6">Ikuti 4 langkah mudah ini supaya kamu siap menghadapi ujian Bahasa Inggris Kelas 6!</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div onclick="switchTab('materi')" class="cursor-pointer group p-5 rounded-2xl bg-slate-50 hover:bg-blue-50 border border-slate-200/70 hover:border-blue-200 transition">
+            <span class="inline-block px-3 py-1 rounded-lg bg-blue-600 text-white text-xs font-extrabold mb-3">Langkah 1</span>
+            <h4 class="font-bold text-slate-800 group-hover:text-blue-700 mb-1">Pelajari 6 Bab Materi</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">Baca penjelasan ringkas, pahami rumus kalimat, dan klik ikon speaker untuk mendengar pengucapannya.</p>
+          </div>
+          <div onclick="switchTab('contoh')" class="cursor-pointer group p-5 rounded-2xl bg-slate-50 hover:bg-amber-50 border border-slate-200/70 hover:border-amber-200 transition">
+            <span class="inline-block px-3 py-1 rounded-lg bg-amber-500 text-white text-xs font-extrabold mb-3">Langkah 2</span>
+            <h4 class="font-bold text-slate-800 group-hover:text-amber-700 mb-1">Pahami Contoh Bertahap</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">Lihat cara menemukan kata kunci pada soal dan cara memilih jawaban yang paling tepat.</p>
+          </div>
+          <div onclick="switchTab('latihan')" class="cursor-pointer group p-5 rounded-2xl bg-slate-50 hover:bg-emerald-50 border border-slate-200/70 hover:border-emerald-200 transition">
+            <span class="inline-block px-3 py-1 rounded-lg bg-emerald-600 text-white text-xs font-extrabold mb-3">Langkah 3</span>
+            <h4 class="font-bold text-slate-800 group-hover:text-emerald-700 mb-1">Kerjakan Latihan Soal</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">Pilih 10, 20, atau 30 soal acak. Nilai dan pembahasan lengkap langsung muncul setelah selesai.</p>
+          </div>
+          <div onclick="switchTab('riwayat')" class="cursor-pointer group p-5 rounded-2xl bg-slate-50 hover:bg-purple-50 border border-slate-200/70 hover:border-purple-200 transition">
+            <span class="inline-block px-3 py-1 rounded-lg bg-purple-600 text-white text-xs font-extrabold mb-3">Langkah 4</span>
+            <h4 class="font-bold text-slate-800 group-hover:text-purple-700 mb-1">Ulangi Soal yang Salah</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">Gunakan fitur ulangi soal salah untuk memperbaiki jawaban keliru hingga kamu paham 100%.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 2: MATERI BELAJAR LENGKAP ==================== -->
+    <section id="tab-materi" class="tab-content hidden fade-in space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm">
+        <div>
+          <h2 class="text-2xl font-extrabold text-slate-800">Materi Bahasa Inggris Kelas 6 SD</h2>
+          <p class="text-sm text-slate-500">Klik ikon <i class="fa-solid fa-volume-high text-blue-600"></i> pada kosakata atau kalimat untuk mendengarkan pelafalan bahasa Inggris.</p>
+        </div>
+        <div class="bg-blue-50 px-4 py-2.5 rounded-2xl border border-blue-100 text-sm font-bold text-blue-700 shrink-0">
+          Progres: <span id="materi-progress-text">0 dari 6 Bab Selesai</span>
+        </div>
+      </div>
+
+      <!-- Grid Daftar Bab + Konten Bab -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <!-- Sidebar Daftar Bab -->
+        <div id="materi-sidebar" class="lg:col-span-4 space-y-2.5">
+          <button onclick="selectChapter('bab-1')" class="w-full text-left p-4 rounded-2xl border transition flex items-center justify-between gap-3 bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/20">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-white/20 text-white">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+              <div class="truncate">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-blue-100">Bab 1</p>
+                <p class="font-bold text-sm truncate">Simple Past Tense (Kegiatan Masa Lalu)</p>
+              </div>
+            </div>
+            <span class="w-6 h-6 rounded-full border shrink-0 border-white/40"></span>
+          </button>
+        
+          <button onclick="selectChapter('bab-2')" class="w-full text-left p-4 rounded-2xl border transition flex items-center justify-between gap-3 bg-white text-slate-700 border-slate-200/80 hover:border-blue-300 hover:bg-blue-50/40">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-blue-100 text-blue-600">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <div class="truncate">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-blue-600">Bab 2</p>
+                <p class="font-bold text-sm truncate">Future Tense (Rencana Masa Depan)</p>
+              </div>
+            </div>
+            <span class="w-6 h-6 rounded-full border shrink-0 border-slate-300"></span>
+          </button>
+        
+          <button onclick="selectChapter('bab-3')" class="w-full text-left p-4 rounded-2xl border transition flex items-center justify-between gap-3 bg-white text-slate-700 border-slate-200/80 hover:border-blue-300 hover:bg-blue-50/40">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-blue-100 text-blue-600">
+                <i class="fa-solid fa-scale-balanced"></i>
+              </div>
+              <div class="truncate">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-blue-600">Bab 3</p>
+                <p class="font-bold text-sm truncate">Describing People &amp; Comparison (Perbandingan)</p>
+              </div>
+            </div>
+            <span class="w-6 h-6 rounded-full border shrink-0 border-slate-300"></span>
+          </button>
+        
+          <button onclick="selectChapter('bab-4')" class="w-full text-left p-4 rounded-2xl border transition flex items-center justify-between gap-3 bg-white text-slate-700 border-slate-200/80 hover:border-blue-300 hover:bg-blue-50/40">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-blue-100 text-blue-600">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="truncate">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-blue-600">Bab 4</p>
+                <p class="font-bold text-sm truncate">Giving Directions &amp; Public Places</p>
+              </div>
+            </div>
+            <span class="w-6 h-6 rounded-full border shrink-0 border-slate-300"></span>
+          </button>
+        
+          <button onclick="selectChapter('bab-5')" class="w-full text-left p-4 rounded-2xl border transition flex items-center justify-between gap-3 bg-white text-slate-700 border-slate-200/80 hover:border-blue-300 hover:bg-blue-50/40">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-blue-100 text-blue-600">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <div class="truncate">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-blue-600">Bab 5</p>
+                <p class="font-bold text-sm truncate">Food, Drink &amp; Quantifiers (Satuan Takaran)</p>
+              </div>
+            </div>
+            <span class="w-6 h-6 rounded-full border shrink-0 border-slate-300"></span>
+          </button>
+        
+          <button onclick="selectChapter('bab-6')" class="w-full text-left p-4 rounded-2xl border transition flex items-center justify-between gap-3 bg-white text-slate-700 border-slate-200/80 hover:border-blue-300 hover:bg-blue-50/40">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-blue-100 text-blue-600">
+                <i class="fa-solid fa-newspaper"></i>
+              </div>
+              <div class="truncate">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-blue-600">Bab 6</p>
+                <p class="font-bold text-sm truncate">Reading Comprehension &amp; Short Functional Text</p>
+              </div>
+            </div>
+            <span class="w-6 h-6 rounded-full border shrink-0 border-slate-300"></span>
+          </button>
+        </div>
+
+        <!-- Area Pembaca Materi -->
+        <div id="materi-reader" class="lg:col-span-8 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm">
+        <div class="space-y-6 fade-in">
+          <div class="border-b border-slate-100 pb-4">
+            <span class="inline-block px-3 py-1 rounded-xl bg-blue-100 text-blue-700 text-xs font-extrabold mb-2">Bab 1</span>
+            <h3 class="text-2xl font-extrabold text-slate-800">Simple Past Tense (Kegiatan Masa Lalu)</h3>
+            <p class="text-sm text-slate-500 mt-1 leading-relaxed">Digunakan untuk menceritakan kegiatan atau kejadian yang sudah selesai dilakukan di masa lampau (kemarin, tadi pagi, minggu lalu, tahun lalu).</p>
+          </div>
+
+          <div class="text-slate-700 text-sm sm:text-base leading-relaxed">
+            
+          <p class="mb-3">Dalam bahasa Inggris, jika kita menceritakan kejadian yang <strong>sudah berlalu</strong>, kata kerjanya (Verb) berubah menjadi <strong>Verb 2 (Kata Kerja Bentuk Lampau)</strong>.</p>
+          <div class="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-4">
+            <h4 class="font-bold text-blue-800 mb-2">📌 Pola Kalimat Sederhana:</h4>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li><strong>(+) Kalimat Positif:</strong> Subjek + <strong>Verb 2</strong> + Objek <br><span class="text-xs text-slate-500">Contoh: <em>I <strong>visited</strong> my grandmother yesterday.</em> (Saya mengunjungi nenek kemarin.)</span></li>
+              <li><strong>(-) Kalimat Negatif:</strong> Subjek + <strong>did not (didn't) + Verb 1</strong> <br><span class="text-xs text-slate-500">Contoh: <em>She <strong>did not go</strong> to school last Sunday.</em> (Dia tidak pergi ke sekolah Minggu lalu.)</span></li>
+              <li><strong>(?) Kalimat Tanya:</strong> <strong>Did</strong> + Subjek + <strong>Verb 1</strong>? <br><span class="text-xs text-slate-500">Contoh: <em><strong>Did</strong> you <strong>play</strong> football yesterday?</em> (Apakah kamu bermain sepak bola kemarin?)</span></li>
+            </ul>
+          </div>
+          <p class="text-sm text-slate-600"><strong>Kata Keterangan Waktu (Time Signals):</strong> <em>yesterday</em> (kemarin), <em>last night</em> (tadi malam), <em>last week</em> (minggu lalu), <em>two days ago</em> (dua hari lalu).</p>
+        
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-extrabold text-slate-800 text-base flex items-center gap-2">
+              <i class="fa-solid fa-headphones text-blue-600"></i> Kosakata Penting &amp; Pelafalan
+            </h4>
+            <div class="space-y-2.5">
+              
+          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-extrabold text-slate-800 text-sm">Went (Go)</span>
+                <span class="text-xs text-slate-400">•</span>
+                <span class="text-xs font-semibold text-blue-600">Pergi (bentuk lampau)</span>
+              </div>
+              <p class="text-xs text-slate-600 italic mt-0.5">"We went to the zoo last Sunday."</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button onclick="speakEnglish('Went')" class="px-3 py-1.5 rounded-xl bg-white hover:bg-blue-50 text-blue-600 border border-slate-200 text-xs font-bold transition" title="Dengarkan kata">
+                <i class="fa-solid fa-volume-high mr-1"></i> Kata
+              </button>
+              <button onclick="speakEnglish('We went to the zoo last Sunday.')" class="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition" title="Dengarkan kalimat contoh">
+                <i class="fa-solid fa-play mr-1"></i> Kalimat
+              </button>
+            </div>
+          </div>
+        
+          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-extrabold text-slate-800 text-sm">Ate (Eat)</span>
+                <span class="text-xs text-slate-400">•</span>
+                <span class="text-xs font-semibold text-blue-600">Makan (bentuk lampau)</span>
+              </div>
+              <p class="text-xs text-slate-600 italic mt-0.5">"Budi ate fried rice this morning."</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button onclick="speakEnglish('Ate')" class="px-3 py-1.5 rounded-xl bg-white hover:bg-blue-50 text-blue-600 border border-slate-200 text-xs font-bold transition" title="Dengarkan kata">
+                <i class="fa-solid fa-volume-high mr-1"></i> Kata
+              </button>
+              <button onclick="speakEnglish('Budi ate fried rice this morning.')" class="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition" title="Dengarkan kalimat contoh">
+                <i class="fa-solid fa-play mr-1"></i> Kalimat
+              </button>
+            </div>
+          </div>
+        
+          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-extrabold text-slate-800 text-sm">Studied (Study)</span>
+                <span class="text-xs text-slate-400">•</span>
+                <span class="text-xs font-semibold text-blue-600">Belajar (bentuk lampau)</span>
+              </div>
+              <p class="text-xs text-slate-600 italic mt-0.5">"Siti studied English last night."</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button onclick="speakEnglish('Studied')" class="px-3 py-1.5 rounded-xl bg-white hover:bg-blue-50 text-blue-600 border border-slate-200 text-xs font-bold transition" title="Dengarkan kata">
+                <i class="fa-solid fa-volume-high mr-1"></i> Kata
+              </button>
+              <button onclick="speakEnglish('Siti studied English last night.')" class="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition" title="Dengarkan kalimat contoh">
+                <i class="fa-solid fa-play mr-1"></i> Kalimat
+              </button>
+            </div>
+          </div>
+        
+          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-extrabold text-slate-800 text-sm">Bought (Buy)</span>
+                <span class="text-xs text-slate-400">•</span>
+                <span class="text-xs font-semibold text-blue-600">Membeli (bentuk lampau)</span>
+              </div>
+              <p class="text-xs text-slate-600 italic mt-0.5">"Mother bought fresh apples yesterday."</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button onclick="speakEnglish('Bought')" class="px-3 py-1.5 rounded-xl bg-white hover:bg-blue-50 text-blue-600 border border-slate-200 text-xs font-bold transition" title="Dengarkan kata">
+                <i class="fa-solid fa-volume-high mr-1"></i> Kata
+              </button>
+              <button onclick="speakEnglish('Mother bought fresh apples yesterday.')" class="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition" title="Dengarkan kalimat contoh">
+                <i class="fa-solid fa-play mr-1"></i> Kalimat
+              </button>
+            </div>
+          </div>
+        
+          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-extrabold text-slate-800 text-sm">Watched (Watch)</span>
+                <span class="text-xs text-slate-400">•</span>
+                <span class="text-xs font-semibold text-blue-600">Menonton (bentuk lampau)</span>
+              </div>
+              <p class="text-xs text-slate-600 italic mt-0.5">"They watched a cartoon movie."</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button onclick="speakEnglish('Watched')" class="px-3 py-1.5 rounded-xl bg-white hover:bg-blue-50 text-blue-600 border border-slate-200 text-xs font-bold transition" title="Dengarkan kata">
+                <i class="fa-solid fa-volume-high mr-1"></i> Kata
+              </button>
+              <button onclick="speakEnglish('They watched a cartoon movie.')" class="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition" title="Dengarkan kalimat contoh">
+                <i class="fa-solid fa-play mr-1"></i> Kalimat
+              </button>
+            </div>
+          </div>
+        
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <button onclick="toggleChapterCompleted('bab-1')" class="w-full sm:w-auto px-6 py-3.5 rounded-2xl font-extrabold text-sm transition flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg shadow-emerald-600/20">
+              <i class="fa-solid fa-check"></i>
+              Tandai Sudah Dipelajari
+            </button>
+
+            <button onclick="switchTab('latihan')" class="w-full sm:w-auto px-5 py-3.5 rounded-2xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-sm transition">
+              Uji Pemahaman di Latihan Soal <i class="fa-solid fa-arrow-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 3: CONTOH SOAL & PEMBAHASAN BERTAHAP ==================== -->
+    <section id="tab-contoh" class="tab-content hidden fade-in space-y-6">
+      <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm">
+        <h2 class="text-2xl font-extrabold text-slate-800 mb-1">Contoh Soal &amp; Pembahasan Bertahap</h2>
+        <p class="text-sm text-slate-500">Pelajari cara berpikir langkah demi langkah sebelum kamu mengerjakan evaluasi mandiri!</p>
+      </div>
+
+      <div id="contoh-list" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-xl bg-amber-100 text-amber-800 text-xs font-extrabold">Contoh #1</span>
+              <span class="text-xs font-bold text-slate-500">Bab 1 • Simple Past Tense</span>
+            </div>
+            <p class="font-bold text-slate-800 text-base leading-relaxed">Rina ... a new storybook at the bookstore yesterday.</p>
+            <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-600">
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  A. buy
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  B. buys
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-emerald-50 border-emerald-300 text-emerald-800 font-bold">
+                  C. bought
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  D. buying
+                </div>
+              
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="toggleExampleSteps(0)" id="btn-step-0" class="w-full py-2.5 px-4 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-xs transition flex items-center justify-between">
+              <span><i class="fa-solid fa-stairs mr-1.5"></i> Lihat Langkah Pembahasan</span>
+              <i class="fa-solid fa-chevron-down" id="icon-step-0"></i>
+            </button>
+            <div id="steps-box-0" class="hidden mt-3 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2 text-xs text-slate-700 leading-relaxed">
+              <p><strong>Langkah 1 (Cari Kata Kunci Waktu):</strong> Pada akhir kalimat terdapat kata <em>'yesterday'</em> (kemarin). Ini menandakan kejadian sudah berlalu (Simple Past Tense).</p><p><strong>Langkah 2 (Tentukan Rumus Kata Kerja):</strong> Kalimat positif Simple Past Tense wajib menggunakan kata kerja bentuk ke-2 (Verb 2).</p><p><strong>Langkah 3 (Analisis Pilihan):</strong> <em>buy</em> adalah Verb 1, <em>buys</em> untuk Present Tense, <em>buying</em> untuk sedang berlangsung, dan <strong>bought</strong> adalah bentuk Verb 2 dari <em>buy</em>. Jadi jawaban yang tepat adalah <strong>C</strong>.</p>
+              <div class="pt-2 mt-2 border-t border-slate-200 font-extrabold text-emerald-700">
+                <i class="fa-solid fa-circle-check mr-1"></i> Jawaban Benar: C. bought
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-xl bg-amber-100 text-amber-800 text-xs font-extrabold">Contoh #2</span>
+              <span class="text-xs font-bold text-slate-500">Bab 2 • Future Tense</span>
+            </div>
+            <p class="font-bold text-slate-800 text-base leading-relaxed">Look at those dark clouds! It is ... rain soon.</p>
+            <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-600">
+              
+                <div class="px-3 py-2 rounded-xl border bg-emerald-50 border-emerald-300 text-emerald-800 font-bold">
+                  A. going to
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  B. went to
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  C. goes to
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  D. go to
+                </div>
+              
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="toggleExampleSteps(1)" id="btn-step-1" class="w-full py-2.5 px-4 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-xs transition flex items-center justify-between">
+              <span><i class="fa-solid fa-stairs mr-1.5"></i> Lihat Langkah Pembahasan</span>
+              <i class="fa-solid fa-chevron-down" id="icon-step-1"></i>
+            </button>
+            <div id="steps-box-1" class="hidden mt-3 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2 text-xs text-slate-700 leading-relaxed">
+              <p><strong>Langkah 1 (Pahami Konteks Kalimat):</strong> Kalimat pertama menyebut <em>'Look at those dark clouds!'</em> (Lihat awan gelap itu!) dan kata <em>'soon'</em> (segera). Ini adalah prediksi kejadian yang akan segera terjadi.</p><p><strong>Langkah 2 (Perhatikan Kata Bantu Sebelum Titik-titik):</strong> Sebelum titik-titik terdapat to-be <strong>'is'</strong> dan setelahnya ada kata kerja dasar <strong>'rain'</strong>.</p><p><strong>Langkah 3 (Cocokkan Pola):</strong> Pola Future Tense untuk prediksi dengan bukti adalah <em>Subject + is/am/are + <strong>going to</strong> + Verb 1</em>. Maka jawaban yang benar adalah <strong>A</strong>.</p>
+              <div class="pt-2 mt-2 border-t border-slate-200 font-extrabold text-emerald-700">
+                <i class="fa-solid fa-circle-check mr-1"></i> Jawaban Benar: A. going to
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-xl bg-amber-100 text-amber-800 text-xs font-extrabold">Contoh #3</span>
+              <span class="text-xs font-bold text-slate-500">Bab 3 • Degrees of Comparison</span>
+            </div>
+            <p class="font-bold text-slate-800 text-base leading-relaxed">A giraffe is ... than a zebra.</p>
+            <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-600">
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  A. tall
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-emerald-50 border-emerald-300 text-emerald-800 font-bold">
+                  B. taller
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  C. tallest
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  D. the tallest
+                </div>
+              
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="toggleExampleSteps(2)" id="btn-step-2" class="w-full py-2.5 px-4 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-xs transition flex items-center justify-between">
+              <span><i class="fa-solid fa-stairs mr-1.5"></i> Lihat Langkah Pembahasan</span>
+              <i class="fa-solid fa-chevron-down" id="icon-step-2"></i>
+            </button>
+            <div id="steps-box-2" class="hidden mt-3 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2 text-xs text-slate-700 leading-relaxed">
+              <p><strong>Langkah 1 (Identifikasi Jumlah Objek):</strong> Kalimat ini membandingkan dua hewan: <em>a giraffe</em> (jerapah) dan <em>a zebra</em> (zebra).</p><p><strong>Langkah 2 (Temukan Kata Kunci Pembanding):</strong> Terdapat kata <strong>'than'</strong> (daripada) setelah titik-titik.</p><p><strong>Langkah 3 (Terapkan Aturan Comparative):</strong> Untuk membandingkan 2 hal (lebih ... daripada), kata sifat pendek mendapat akhiran <strong>-er</strong> (<em>tall → taller</em>). Jadi jawabannya adalah <strong>B. taller</strong>.</p>
+              <div class="pt-2 mt-2 border-t border-slate-200 font-extrabold text-emerald-700">
+                <i class="fa-solid fa-circle-check mr-1"></i> Jawaban Benar: B. taller
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-xl bg-amber-100 text-amber-800 text-xs font-extrabold">Contoh #4</span>
+              <span class="text-xs font-bold text-slate-500">Bab 4 • Giving Directions</span>
+            </div>
+            <p class="font-bold text-slate-800 text-base leading-relaxed">The hospital is across from the bank. The underlined words 'across from' mean ...</p>
+            <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-600">
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  A. di belakang
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  B. di sebelah
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-emerald-50 border-emerald-300 text-emerald-800 font-bold">
+                  C. di seberang
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  D. di antara
+                </div>
+              
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="toggleExampleSteps(3)" id="btn-step-3" class="w-full py-2.5 px-4 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-xs transition flex items-center justify-between">
+              <span><i class="fa-solid fa-stairs mr-1.5"></i> Lihat Langkah Pembahasan</span>
+              <i class="fa-solid fa-chevron-down" id="icon-step-3"></i>
+            </button>
+            <div id="steps-box-3" class="hidden mt-3 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2 text-xs text-slate-700 leading-relaxed">
+              <p><strong>Langkah 1 (Fokus pada Kata yang Ditanyakan):</strong> Soal menanyakan arti dari frasa preposisi tempat <em>'across from'</em>.</p><p><strong>Langkah 2 (Ingat Sinonim &amp; Kosakata Arah):</strong> Dalam materi lokasi tempat umum, <em>across from</em> memiliki arti yang sama dengan <em>opposite</em>.</p><p><strong>Langkah 3 (Terjemahkan):</strong> Arti dari <em>across from / opposite</em> adalah <strong>di seberang</strong> (dipisahkan oleh jalan). Jawaban yang tepat adalah <strong>C</strong>.</p>
+              <div class="pt-2 mt-2 border-t border-slate-200 font-extrabold text-emerald-700">
+                <i class="fa-solid fa-circle-check mr-1"></i> Jawaban Benar: C. di seberang
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-xl bg-amber-100 text-amber-800 text-xs font-extrabold">Contoh #5</span>
+              <span class="text-xs font-bold text-slate-500">Bab 5 • Food &amp; Quantifiers</span>
+            </div>
+            <p class="font-bold text-slate-800 text-base leading-relaxed">Mother needs ... sugar to make a cup of sweet tea.</p>
+            <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-600">
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  A. many
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  B. a few
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-emerald-50 border-emerald-300 text-emerald-800 font-bold">
+                  C. some
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  D. any
+                </div>
+              
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="toggleExampleSteps(4)" id="btn-step-4" class="w-full py-2.5 px-4 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-xs transition flex items-center justify-between">
+              <span><i class="fa-solid fa-stairs mr-1.5"></i> Lihat Langkah Pembahasan</span>
+              <i class="fa-solid fa-chevron-down" id="icon-step-4"></i>
+            </button>
+            <div id="steps-box-4" class="hidden mt-3 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2 text-xs text-slate-700 leading-relaxed">
+              <p><strong>Langkah 1 (Cek Jenis Benda):</strong> Kata setelah titik-titik adalah <em>'sugar'</em> (gula). Gula termasuk benda yang tidak bisa dihitung satuannya (Uncountable Noun).</p><p><strong>Langkah 2 (Cek Jenis Kalimat):</strong> Kalimat ini adalah kalimat berita positif (bukan kalimat negatif dan bukan kalimat tanya).</p><p><strong>Langkah 3 (Eliminasi Pilihan):</strong> <em>many</em> dan <em>a few</em> hanya untuk benda yang bisa dihitung. <em>any</em> dipakai untuk kalimat negatif/tanya. Maka <strong>some</strong> (sedikit/beberapa) adalah pilihan yang paling tepat (<strong>C</strong>).</p>
+              <div class="pt-2 mt-2 border-t border-slate-200 font-extrabold text-emerald-700">
+                <i class="fa-solid fa-circle-check mr-1"></i> Jawaban Benar: C. some
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-xl bg-amber-100 text-amber-800 text-xs font-extrabold">Contoh #6</span>
+              <span class="text-xs font-bold text-slate-500">Bab 6 • Notice / Functional Text</span>
+            </div>
+            <p class="font-bold text-slate-800 text-base leading-relaxed">You see a sign 'KEEP SILENT' on the wall. Where do you usually find this sign?</p>
+            <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-600">
+              
+                <div class="px-3 py-2 rounded-xl border bg-emerald-50 border-emerald-300 text-emerald-800 font-bold">
+                  A. In the library
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  B. In the playground
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  C. At the market
+                </div>
+              
+                <div class="px-3 py-2 rounded-xl border bg-slate-50 border-slate-200">
+                  D. At the bus station
+                </div>
+              
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="toggleExampleSteps(5)" id="btn-step-5" class="w-full py-2.5 px-4 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-xs transition flex items-center justify-between">
+              <span><i class="fa-solid fa-stairs mr-1.5"></i> Lihat Langkah Pembahasan</span>
+              <i class="fa-solid fa-chevron-down" id="icon-step-5"></i>
+            </button>
+            <div id="steps-box-5" class="hidden mt-3 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2 text-xs text-slate-700 leading-relaxed">
+              <p><strong>Langkah 1 (Artikan Tanda Peringatan):</strong> <em>'KEEP SILENT'</em> artinya adalah 'Harap Tenang / Jangan Berisik'.</p><p><strong>Langkah 2 (Hubungkan dengan Tempat Umum):</strong> Tempat umum manakah yang mewajibkan pengunjungnya untuk tenang agar tidak mengganggu orang lain yang sedang membaca atau belajar?</p><p><strong>Langkah 3 (Tentukan Jawaban):</strong> Tempat tersebut adalah perpustakaan (<em>In the library</em>). Jadi jawaban yang benar adalah <strong>A</strong>.</p>
+              <div class="pt-2 mt-2 border-t border-slate-200 font-extrabold text-emerald-700">
+                <i class="fa-solid fa-circle-check mr-1"></i> Jawaban Benar: A. In the library
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 4: LATIHAN & EVALUASI ==================== -->
+    <section id="tab-latihan" class="tab-content hidden fade-in">
+      <!-- Layar 1: Pengaturan Kuis -->
+      <div id="quiz-setup-view" class="max-w-2xl mx-auto bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm space-y-6">
+        <div class="text-center space-y-2">
+          <div class="w-16 h-16 rounded-3xl bg-blue-100 text-blue-600 flex items-center justify-center text-3xl mx-auto mb-2">
+            <i class="fa-solid fa-spell-check"></i>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800">Siap Latihan Soal?</h2>
+          <p class="text-sm text-slate-500">Soal dan urutan pilihan jawaban (A, B, C, D) akan diacak secara otomatis di setiap sesi.</p>
+        </div>
+
+        <!-- Pilihan Topik -->
+        <div class="space-y-2">
+          <label for="quiz-topic-select" class="block text-sm font-bold text-slate-700">1. Pilih Topik Materi:</label>
+          <select id="quiz-topic-select" onchange="updateAvailableQuestionHint()" class="w-full p-3.5 rounded-2xl border border-slate-300 bg-slate-50 font-semibold text-slate-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="all">Semua Bab (Campuran Lengkap — 36 Soal Tersedia)</option>
+            <option value="Simple Past Tense">Bab 1: Simple Past Tense (Kegiatan Masa Lalu)</option>
+            <option value="Future Tense">Bab 2: Future Tense (Will &amp; Going To)</option>
+            <option value="Describing &amp; Comparison">Bab 3: Describing People &amp; Comparison</option>
+            <option value="Directions &amp; Public Places">Bab 4: Giving Directions &amp; Public Places</option>
+            <option value="Food &amp; Quantifiers">Bab 5: Food, Drink &amp; Quantifiers</option>
+            <option value="Reading Comprehension">Bab 6: Reading Comprehension &amp; Short Text</option>
+          </select>
+          <p id="topic-hint-text" class="text-xs text-blue-600 font-medium">Tersedia 36 soal dalam bank soal untuk topik ini.</p>
+        </div>
+
+        <!-- Pilihan Jumlah Soal -->
+        <div class="space-y-2">
+          <label class="block text-sm font-bold text-slate-700">2. Pilih Jumlah Soal Latihan:</label>
+          <div class="grid grid-cols-3 gap-3">
+            <button type="button" onclick="selectQuestionCount(10)" id="count-btn-10" class="count-btn p-4 rounded-2xl border-2 border-blue-600 bg-blue-50 text-blue-700 font-extrabold text-center transition">
+              <span class="block text-2xl">10</span>
+              <span class="text-xs font-semibold">Soal Cepat</span>
+            </button>
+            <button type="button" onclick="selectQuestionCount(20)" id="count-btn-20" class="count-btn p-4 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 hover:border-blue-300 font-extrabold text-center transition">
+              <span class="block text-2xl">20</span>
+              <span class="text-xs font-semibold">Soal Standar</span>
+            </button>
+            <button type="button" onclick="selectQuestionCount(30)" id="count-btn-30" class="count-btn p-4 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 hover:border-blue-300 font-extrabold text-center transition">
+              <span class="block text-2xl">30</span>
+              <span class="text-xs font-semibold">Ujian Lengkap</span>
+            </button>
+          </div>
+          <p id="count-adjust-note" class="text-xs text-amber-600 hidden font-medium">
+            *Catatan: Jika memilih 1 bab tertentu, maksimal soal per bab adalah 6 soal. Pilih "Semua Bab" untuk mengerjakan 10, 20, atau 30 soal penuh.
+          </p>
+        </div>
+
+        <button onclick="startQuiz()" class="w-full py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-extrabold text-base shadow-lg shadow-blue-600/25 transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-play"></i> Mulai Kerjakan Sekarang
+        </button>
+      </div>
+
+      <!-- Layar 2: Pengerjaan Soal Aktif -->
+      <div id="quiz-active-view" class="hidden max-w-3xl mx-auto space-y-5">
+        <!-- Header Progres Kuis -->
+        <div class="bg-white p-4 sm:p-5 rounded-3xl border border-slate-200/80 shadow-sm space-y-3">
+          <div class="flex items-center justify-between text-sm font-bold">
+            <span id="quiz-mode-badge" class="px-3 py-1 rounded-xl bg-blue-100 text-blue-700 text-xs">Mode Evaluasi</span>
+            <span class="text-slate-600">Soal <span id="quiz-current-num" class="text-blue-600 font-extrabold">1</span> dari <span id="quiz-total-num">10</span></span>
+          </div>
+          <!-- Progress Bar -->
+          <div class="w-full h-3 bg-slate-100 rounded-full overflow-hidden">
+            <div id="quiz-progress-bar" class="h-full bg-gradient-to-r from-blue-500 to-emerald-500 transition-all duration-300" style="width: 10%"></div>
+          </div>
+          <!-- Navigasi Nomor Cepat -->
+          <div id="quiz-number-pills" class="flex flex-wrap gap-1.5 pt-1"></div>
+        </div>
+
+        <!-- Kartu Pertanyaan -->
+        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-6">
+          <div class="flex items-center justify-between gap-2">
+            <span id="question-topic-tag" class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-lg bg-slate-100 text-slate-600">Topik</span>
+            <button onclick="speakCurrentQuestion()" class="px-3 py-1.5 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-600 text-xs font-bold transition flex items-center gap-1.5" title="Dengarkan soal dibacakan">
+              <i class="fa-solid fa-volume-high"></i> Dengarkan
+            </button>
+          </div>
+
+          <div id="question-passage-box" class="hidden p-4 rounded-2xl bg-amber-50/80 border border-amber-200 text-slate-700 text-sm leading-relaxed"></div>
+
+          <h3 id="question-text" class="text-lg sm:text-xl font-bold text-slate-800 leading-relaxed">
+            Pertanyaan akan tampil di sini...
+          </h3>
+
+          <!-- Pilihan Jawaban A, B, C, D -->
+          <div id="options-container" class="space-y-3">
+            <!-- Diisi via JS -->
+          </div>
+        </div>
+
+        <!-- Tombol Navigasi Bawah -->
+        <div class="flex items-center justify-between gap-3">
+          <button onclick="prevQuestion()" id="btn-prev-q" class="px-5 py-3 rounded-2xl bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 font-bold text-sm transition disabled:opacity-40">
+            <i class="fa-solid fa-arrow-left mr-1"></i> Sebelumnya
+          </button>
+
+          <button onclick="nextQuestion()" id="btn-next-q" class="px-6 py-3 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md transition">
+            Selanjutnya <i class="fa-solid fa-arrow-right ml-1"></i>
+          </button>
+
+          <button onclick="finishQuizConfirm()" id="btn-finish-q" class="hidden px-6 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm shadow-lg shadow-emerald-600/20 transition">
+            <i class="fa-solid fa-check-double mr-1"></i> Selesai &amp; Lihat Nilai
+          </button>
+        </div>
+      </div>
+
+      <!-- Layar 3: Hasil Evaluasi & Pembahasan Lengkap -->
+      <div id="quiz-result-view" class="hidden max-w-4xl mx-auto space-y-6">
+        <!-- Kartu Skor Utama -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm text-center space-y-4">
+          <div id="result-trophy-icon" class="w-20 h-20 rounded-3xl bg-amber-100 text-amber-500 flex items-center justify-center text-4xl mx-auto">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-slate-500 uppercase tracking-wider">Hasil Evaluasi Belajar</p>
+            <h2 id="result-score-value" class="text-5xl sm:text-6xl font-black text-blue-600 my-1">100</h2>
+            <p id="result-feedback-text" class="text-base sm:text-lg font-bold text-slate-800">Luar Biasa! Kamu menguasai materi dengan sangat baik!</p>
+          </div>
+
+          <div class="grid grid-cols-3 gap-3 max-w-md mx-auto pt-2">
+            <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200/60">
+              <p class="text-xs text-slate-500 font-semibold">Total Soal</p>
+              <p id="res-total" class="text-lg font-extrabold text-slate-800">10</p>
+            </div>
+            <div class="p-3 rounded-2xl bg-emerald-50 border border-emerald-200/60">
+              <p class="text-xs text-emerald-700 font-semibold">Benar</p>
+              <p id="res-correct" class="text-lg font-extrabold text-emerald-600">0</p>
+            </div>
+            <div class="p-3 rounded-2xl bg-rose-50 border border-rose-200/60">
+              <p class="text-xs text-rose-700 font-semibold">Salah</p>
+              <p id="res-wrong" class="text-lg font-extrabold text-rose-600">0</p>
+            </div>
+          </div>
+
+          <!-- Tombol Aksi Hasil (Termasuk Ulangi Soal yang Salah) -->
+          <div class="flex flex-wrap items-center justify-center gap-3 pt-4">
+            <button id="btn-retry-wrong" onclick="retryWrongQuestions()" class="hidden px-6 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-extrabold text-sm shadow-lg shadow-amber-500/25 transition flex items-center gap-2">
+              <i class="fa-solid fa-rotate-right"></i> Ulangi Soal yang Salah (<span id="retry-wrong-count">0</span> Soal)
+            </button>
+            <button onclick="resetToQuizSetup()" class="px-6 py-3.5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-md transition flex items-center gap-2">
+              <i class="fa-solid fa-plus"></i> Latihan Baru
+            </button>
+          </div>
+        </div>
+
+        <!-- Daftar Pembahasan Setiap Soal -->
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <h3 class="text-xl font-extrabold text-slate-800">Pembahasan Lengkap Setiap Nomor</h3>
+            <span class="text-xs font-semibold text-slate-500">Pelajari kembali jawaban yang keliru</span>
+          </div>
+          <div id="result-review-list" class="space-y-4">
+            <!-- Diisi via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 5: RIWAYAT & PROGRES BELAJAR ==================== -->
+    <section id="tab-riwayat" class="tab-content hidden fade-in space-y-6">
+      <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-extrabold text-slate-800">Catatan Progres &amp; Riwayat Nilai</h2>
+          <p class="text-sm text-slate-500">Semua pencapaianmu tersimpan otomatis di perangkat ini.</p>
+        </div>
+        <button onclick="confirmResetProgress()" class="px-4 py-2.5 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-600 border border-rose-200 font-bold text-xs transition self-start sm:self-auto">
+          <i class="fa-solid fa-trash-can mr-1"></i> Reset Semua Progres
+        </button>
+      </div>
+
+      <!-- Status Penyelesaian Per Bab -->
+      <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
+        <h3 class="text-lg font-extrabold text-slate-800">Status Pembelajaran Materi (6 Bab)</h3>
+        <div id="history-chapters-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <!-- Diisi via JS -->
+        </div>
+      </div>
+
+      <!-- Tabel / Daftar Riwayat Kuis -->
+      <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
+        <h3 class="text-lg font-extrabold text-slate-800">Riwayat Latihan &amp; Evaluasi</h3>
+        <div id="history-quiz-list" class="space-y-3">
+          <!-- Diisi via JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer dengan Tombol Ekspor/Unduh File Mandiri -->
+  <footer class="bg-white border-t border-slate-200/80 mt-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <div class="text-center sm:text-left">
+        <p class="font-bold text-slate-700">Ruang Belajar Bahasa Inggris — Kelas 6 SD</p>
+        <p>Aplikasi edukasi mandiri berbasis web (Offline-ready &amp; GitHub Pages friendly).</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <button onclick="downloadStandaloneHTML()" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs transition flex items-center gap-2 shadow-sm">
+          <i class="fa-solid fa-download"></i> Unduh File (index.html)
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== JAVASCRIPT LOGIC & DATA ==================== -->
+  <script>
+    // =========================================================================
+    // 1. DATA MATERI BELAJAR LENGKAP (6 BAB KURIKULUM BAHASA INGGRIS KELAS 6 SD)
+    // =========================================================================
+    const MATERIALS_DATA = [
+      {
+        id: "bab-1",
+        number: "Bab 1",
+        title: "Simple Past Tense (Kegiatan Masa Lalu)",
+        icon: "fa-clock-rotate-left",
+        color: "blue",
+        summary: "Digunakan untuk menceritakan kegiatan atau kejadian yang sudah selesai dilakukan di masa lampau (kemarin, tadi pagi, minggu lalu, tahun lalu).",
+        explanation: `
+          <p class="mb-3">Dalam bahasa Inggris, jika kita menceritakan kejadian yang <strong>sudah berlalu</strong>, kata kerjanya (Verb) berubah menjadi <strong>Verb 2 (Kata Kerja Bentuk Lampau)</strong>.</p>
+          <div class="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-4">
+            <h4 class="font-bold text-blue-800 mb-2">📌 Pola Kalimat Sederhana:</h4>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li><strong>(+) Kalimat Positif:</strong> Subjek + <strong>Verb 2</strong> + Objek <br><span class="text-xs text-slate-500">Contoh: <em>I <strong>visited</strong> my grandmother yesterday.</em> (Saya mengunjungi nenek kemarin.)</span></li>
+              <li><strong>(-) Kalimat Negatif:</strong> Subjek + <strong>did not (didn't) + Verb 1</strong> <br><span class="text-xs text-slate-500">Contoh: <em>She <strong>did not go</strong> to school last Sunday.</em> (Dia tidak pergi ke sekolah Minggu lalu.)</span></li>
+              <li><strong>(?) Kalimat Tanya:</strong> <strong>Did</strong> + Subjek + <strong>Verb 1</strong>? <br><span class="text-xs text-slate-500">Contoh: <em><strong>Did</strong> you <strong>play</strong> football yesterday?</em> (Apakah kamu bermain sepak bola kemarin?)</span></li>
+            </ul>
+          </div>
+          <p class="text-sm text-slate-600"><strong>Kata Keterangan Waktu (Time Signals):</strong> <em>yesterday</em> (kemarin), <em>last night</em> (tadi malam), <em>last week</em> (minggu lalu), <em>two days ago</em> (dua hari lalu).</p>
+        `,
+        vocab: [
+          { en: "Went (Go)", id: "Pergi (bentuk lampau)", example: "We went to the zoo last Sunday." },
+          { en: "Ate (Eat)", id: "Makan (bentuk lampau)", example: "Budi ate fried rice this morning." },
+          { en: "Studied (Study)", id: "Belajar (bentuk lampau)", example: "Siti studied English last night." },
+          { en: "Bought (Buy)", id: "Membeli (bentuk lampau)", example: "Mother bought fresh apples yesterday." },
+          { en: "Watched (Watch)", id: "Menonton (bentuk lampau)", example: "They watched a cartoon movie." }
+        ]
+      },
+      {
+        id: "bab-2",
+        number: "Bab 2",
+        title: "Future Tense (Rencana Masa Depan)",
+        icon: "fa-rocket",
+        color: "indigo",
+        summary: "Digunakan untuk menyatakan rencana, keinginan, atau kegiatan yang akan dilakukan di masa depan (besok, minggu depan, liburan nanti).",
+        explanation: `
+          <p class="mb-3">Untuk menyatakan kejadian yang <strong>akan terjadi</strong> di masa depan, kita menggunakan kata <strong>will</strong> atau <strong>be going to</strong> yang diikuti oleh <strong>Verb 1 (Kata Kerja Dasar)</strong>.</p>
+          <div class="bg-indigo-50 border border-indigo-200 rounded-2xl p-4 mb-4">
+            <h4 class="font-bold text-indigo-800 mb-2">📌 Pola Kalimat Future Tense:</h4>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li><strong>1. Menggunakan "Will" (Akan):</strong> Subjek + <strong>will + Verb 1</strong> <br><span class="text-xs text-slate-500">Contoh: <em>I <strong>will help</strong> you tomorrow.</em> (Saya akan membantumu besok.)</span></li>
+              <li><strong>2. Menggunakan "Going to" (Berencana akan):</strong> Subjek + <strong>am/is/are + going to + Verb 1</strong> <br><span class="text-xs text-slate-500">Contoh: <em>She <strong>is going to visit</strong> Bali next holiday.</em> (Dia akan mengunjungi Bali liburan depan.)</span></li>
+              <li><strong>3. Bentuk Negatif:</strong> Gunakan <strong>will not (won't)</strong> atau <strong>is/am/are not going to</strong>.</li>
+            </ul>
+          </div>
+          <p class="text-sm text-slate-600"><strong>Kata Keterangan Waktu:</strong> <em>tomorrow</em> (besok), <em>next week</em> (minggu depan), <em>next month</em> (bulan depan), <em>tonight</em> (nanti malam).</p>
+        `,
+        vocab: [
+          { en: "Tomorrow", id: "Besok", example: "We will have an English test tomorrow." },
+          { en: "Next holiday", id: "Liburan berikutnya", example: "My family is going to camp next holiday." },
+          { en: "Will travel", id: "Akan bepergian", example: "They will travel by train." },
+          { en: "Going to swim", id: "Akan berenang", example: "Rafi is going to swim on Saturday." },
+          { en: "Tonight", id: "Malam ini / nanti malam", example: "I will finish my homework tonight." }
+        ]
+      },
+      {
+        id: "bab-3",
+        number: "Bab 3",
+        title: "Describing People & Comparison (Perbandingan)",
+        icon: "fa-scale-balanced",
+        color: "emerald",
+        summary: "Belajar mendeskripsikan ciri fisik seseorang/benda serta membandingkan dua hal (Comparative) atau paling (Superlative).",
+        explanation: `
+          <p class="mb-3">Kata sifat (<em>Adjective</em>) digunakan untuk menjelaskan ciri benda atau orang, dan bisa diubah tingkatannya untuk membandingkan.</p>
+          <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 mb-4">
+            <h4 class="font-bold text-emerald-800 mb-2">📌 3 Tingkatan Perbandingan (Degrees of Comparison):</h4>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li><strong>1. Positive (Sama):</strong> <em>as + kata sifat + as</em> <br><span class="text-xs text-slate-500">Contoh: <em>Dina is <strong>as tall as</strong> Rina.</em> (Dina sama tingginya dengan Rina.)</span></li>
+              <li><strong>2. Comparative (Lebih ... daripada):</strong> Tambahkan akhiran <strong>-er + than</strong> (untuk kata pendek) atau <strong>more + kata sifat + than</strong> (untuk kata panjang). <br><span class="text-xs text-slate-500">Contoh: <em>An elephant is <strong>bigger than</strong> a cat.</em> (Gajah lebih besar daripada kucing.)</span></li>
+              <li><strong>3. Superlative (Paling / Ter-...):</strong> Gunakan <strong>the + kata sifat + -est</strong> atau <strong>the most + kata sifat</strong>. <br><span class="text-xs text-slate-500">Contoh: <em>Mount Everest is <strong>the highest</strong> mountain.</em> (Gunung Everest adalah gunung tertinggi.)</span></li>
+            </ul>
+          </div>
+        `,
+        vocab: [
+          { en: "Taller than", id: "Lebih tinggi daripada", example: "Andi is taller than his younger brother." },
+          { en: "The fastest", id: "Paling cepat / tercepat", example: "Cheetah is the fastest land animal." },
+          { en: "More expensive", id: "Lebih mahal", example: "A car is more expensive than a bicycle." },
+          { en: "Curly hair", id: "Rambut keriting", example: "My little sister has cute curly hair." },
+          { en: "Friendly", id: "Ramah", example: "Our new teacher is very kind and friendly." }
+        ]
+      },
+      {
+        id: "bab-4",
+        number: "Bab 4",
+        title: "Giving Directions & Public Places",
+        icon: "fa-map-location-dot",
+        color: "amber",
+        summary: "Mengenal nama-nama tempat umum di kota serta ungkapan untuk menanyakan dan menunjukkan arah jalan dengan sopan.",
+        explanation: `
+          <p class="mb-3">Ketika seseorang tersesat atau mencari lokasi tempat umum (<em>Public Places</em>), kita dapat membantu menunjukkan arah menggunakan ungkapan arah (<em>Directions</em>).</p>
+          <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 mb-4">
+            <h4 class="font-bold text-amber-800 mb-2">📌 Ungkapan Arah & Posisi Tempat:</h4>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li><strong>Turn left / Turn right:</strong> Belok kiri / Belok kanan</li>
+              <li><strong>Go straight ahead:</strong> Jalan lurus ke depan</li>
+              <li><strong>Crossroad / T-junction:</strong> Perempatan jalan / Pertigaan jalan</li>
+              <li><strong>Between:</strong> Di antara dua tempat (<em>The bank is <strong>between</strong> the school and the post office.</em>)</li>
+              <li><strong>Opposite / Across from:</strong> Di seberang (<em>The park is <strong>opposite</strong> the hospital.</em>)</li>
+            </ul>
+          </div>
+        `,
+        vocab: [
+          { en: "Turn left", id: "Belok kiri", example: "Walk straight and turn left at the corner." },
+          { en: "Go straight", id: "Jalan lurus", example: "Go straight along Melati Street." },
+          { en: "Post office", id: "Kantor pos", example: "She goes to the post office to send a letter." },
+          { en: "Opposite", id: "Di seberang", example: "The library is opposite the canteen." },
+          { en: "Next to / Beside", id: "Di sebelah", example: "The bakery is next to the bookstore." }
+        ]
+      },
+      {
+        id: "bab-5",
+        number: "Bab 5",
+        title: "Food, Drink & Quantifiers (Satuan Takaran)",
+        icon: "fa-utensils",
+        color: "rose",
+        summary: "Mengenal kosakata makanan, minuman, serta kata satuan takaran benda yang dapat dihitung dan tidak dapat dihitung.",
+        explanation: `
+          <p class="mb-3">Dalam bahasa Inggris, benda dibagi menjadi <strong>Countable</strong> (bisa dihitung satuan seperti <em>apples, books</em>) dan <strong>Uncountable</strong> (tidak bisa dihitung satuan seperti <em>water, sugar, rice</em>).</p>
+          <div class="bg-rose-50 border border-rose-200 rounded-2xl p-4 mb-4">
+            <h4 class="font-bold text-rose-800 mb-2">📌 Penggunaan Quantifiers & Takaran:</h4>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li><strong>Many vs Much:</strong> <em>How <strong>many</strong> books?</em> (untuk benda bisa dihitung) vs <em>How <strong>much</strong> water?</em> (untuk benda tak bisa dihitung / harga).</li>
+              <li><strong>Some vs Any:</strong> <em>Some</em> untuk kalimat positif (<em>I have <strong>some</strong> oranges</em>), sedangkan <em>Any</em> untuk kalimat negatif & tanya (<em>Do you have <strong>any</strong> milk?</em>).</li>
+              <li><strong>Satuan Wadah (Partitives):</strong> <em>a glass of milk</em> (segelas susu), <em>a bowl of soup</em> (semangkuk sup), <em>a slice of pizza</em> (sepotong pizza), <em>a bottle of water</em> (sebotol air).</li>
+            </ul>
+          </div>
+        `,
+        vocab: [
+          { en: "A bowl of noodles", id: "Semangkuk mi", example: "Father eats a bowl of chicken noodles." },
+          { en: "A glass of orange juice", id: "Segelas jus jeruk", example: "I drink a glass of orange juice every morning." },
+          { en: "A loaf of bread", id: "Sebuah/sepotong roti tawar besar", example: "Mom buys a loaf of bread for breakfast." },
+          { en: "How much", id: "Berapa banyak (tak terhitung) / Berapa harga", example: "How much is a kilo of mangoes?" },
+          { en: "Delicious", id: "Lezat / enak", example: "My mother's fried chicken is very delicious." }
+        ]
+      },
+      {
+        id: "bab-6",
+        number: "Bab 6",
+        title: "Reading Comprehension & Short Functional Text",
+        icon: "fa-newspaper",
+        color: "purple",
+        summary: "Memahami teks bacaan pendek, pengumuman sekolah (Announcement), kartu ucapan (Greeting Card), dan tanda peringatan (Notice).",
+        explanation: `
+          <p class="mb-3">Pada ujian kelas 6 SD, sering muncul teks pendek fungsional. Kunci menjawabnya adalah membaca pertanyaan terlebih dahulu lalu mencari kata kunci di dalam teks.</p>
+          <div class="bg-purple-50 border border-purple-200 rounded-2xl p-4 mb-4">
+            <h4 class="font-bold text-purple-800 mb-2">📌 Jenis Teks Pendek yang Sering Muncul:</h4>
+            <ul class="space-y-1.5 text-sm text-slate-700">
+              <li><strong>1. Notice / Caution (Peringatan):</strong> Contoh: <em>"Keep Silent"</em> (Harap Tenang - di perpustakaan), <em>"Don't Litter"</em> (Dilarang membuang sampah sembarangan).</li>
+              <li><strong>2. Greeting Card (Kartu Ucapan):</strong> Kartu ucapan selamat ulang tahun (<em>Happy Birthday</em>), ucapan selamat atas prestasi (<em>Congratulations</em>), atau doa lekas sembuh (<em>Get Well Soon</em>).</li>
+              <li><strong>3. Short Recount / Descriptive Text:</strong> Paragraf pendek yang menceritakan liburan atau mendeskripsikan hewan/tempat wisata.</li>
+            </ul>
+          </div>
+        `,
+        vocab: [
+          { en: "Congratulations", id: "Selamat (atas keberhasilan)", example: "Congratulations on winning the speech contest!" },
+          { en: "Get well soon", id: "Semoga lekas sembuh", example: "We hope you get well soon, Edo." },
+          { en: "Keep clean", id: "Jagalah kebersihan", example: "Please keep clean in our classroom." },
+          { en: "Announcement", id: "Pengumuman", example: "Read the school announcement carefully." },
+          { en: "Main idea", id: "Gagasan utama / inti bacaan", example: "What is the main idea of the paragraph?" }
+        ]
+      }
+    ];
+
+    // =========================================================================
+    // 2. DATA CONTOH SOAL & PEMBAHASAN BERTAHAP (6 CONTOH INTERAKTIF)
+    // =========================================================================
+    const WORKED_EXAMPLES = [
+      {
+        topic: "Bab 1 • Simple Past Tense",
+        question: "Rina ... a new storybook at the bookstore yesterday.",
+        options: ["A. buy", "B. buys", "C. bought", "D. buying"],
+        answer: "C. bought",
+        steps: [
+          "<strong>Langkah 1 (Cari Kata Kunci Waktu):</strong> Pada akhir kalimat terdapat kata <em>'yesterday'</em> (kemarin). Ini menandakan kejadian sudah berlalu (Simple Past Tense).",
+          "<strong>Langkah 2 (Tentukan Rumus Kata Kerja):</strong> Kalimat positif Simple Past Tense wajib menggunakan kata kerja bentuk ke-2 (Verb 2).",
+          "<strong>Langkah 3 (Analisis Pilihan):</strong> <em>buy</em> adalah Verb 1, <em>buys</em> untuk Present Tense, <em>buying</em> untuk sedang berlangsung, dan <strong>bought</strong> adalah bentuk Verb 2 dari <em>buy</em>. Jadi jawaban yang tepat adalah <strong>C</strong>."
+        ]
+      },
+      {
+        topic: "Bab 2 • Future Tense",
+        question: "Look at those dark clouds! It is ... rain soon.",
+        options: ["A. going to", "B. went to", "C. goes to", "D. go to"],
+        answer: "A. going to",
+        steps: [
+          "<strong>Langkah 1 (Pahami Konteks Kalimat):</strong> Kalimat pertama menyebut <em>'Look at those dark clouds!'</em> (Lihat awan gelap itu!) dan kata <em>'soon'</em> (segera). Ini adalah prediksi kejadian yang akan segera terjadi.",
+          "<strong>Langkah 2 (Perhatikan Kata Bantu Sebelum Titik-titik):</strong> Sebelum titik-titik terdapat to-be <strong>'is'</strong> dan setelahnya ada kata kerja dasar <strong>'rain'</strong>.",
+          "<strong>Langkah 3 (Cocokkan Pola):</strong> Pola Future Tense untuk prediksi dengan bukti adalah <em>Subject + is/am/are + <strong>going to</strong> + Verb 1</em>. Maka jawaban yang benar adalah <strong>A</strong>."
+        ]
+      },
+      {
+        topic: "Bab 3 • Degrees of Comparison",
+        question: "A giraffe is ... than a zebra.",
+        options: ["A. tall", "B. taller", "C. tallest", "D. the tallest"],
+        answer: "B. taller",
+        steps: [
+          "<strong>Langkah 1 (Identifikasi Jumlah Objek):</strong> Kalimat ini membandingkan dua hewan: <em>a giraffe</em> (jerapah) dan <em>a zebra</em> (zebra).",
+          "<strong>Langkah 2 (Temukan Kata Kunci Pembanding):</strong> Terdapat kata <strong>'than'</strong> (daripada) setelah titik-titik.",
+          "<strong>Langkah 3 (Terapkan Aturan Comparative):</strong> Untuk membandingkan 2 hal (lebih ... daripada), kata sifat pendek mendapat akhiran <strong>-er</strong> (<em>tall → taller</em>). Jadi jawabannya adalah <strong>B. taller</strong>."
+        ]
+      },
+      {
+        topic: "Bab 4 • Giving Directions",
+        question: "The hospital is across from the bank. The underlined words 'across from' mean ...",
+        options: ["A. di belakang", "B. di sebelah", "C. di seberang", "D. di antara"],
+        answer: "C. di seberang",
+        steps: [
+          "<strong>Langkah 1 (Fokus pada Kata yang Ditanyakan):</strong> Soal menanyakan arti dari frasa preposisi tempat <em>'across from'</em>.",
+          "<strong>Langkah 2 (Ingat Sinonim & Kosakata Arah):</strong> Dalam materi lokasi tempat umum, <em>across from</em> memiliki arti yang sama dengan <em>opposite</em>.",
+          "<strong>Langkah 3 (Terjemahkan):</strong> Arti dari <em>across from / opposite</em> adalah <strong>di seberang</strong> (dipisahkan oleh jalan). Jawaban yang tepat adalah <strong>C</strong>."
+        ]
+      },
+      {
+        topic: "Bab 5 • Food & Quantifiers",
+        question: "Mother needs ... sugar to make a cup of sweet tea.",
+        options: ["A. many", "B. a few", "C. some", "D. any"],
+        answer: "C. some",
+        steps: [
+          "<strong>Langkah 1 (Cek Jenis Benda):</strong> Kata setelah titik-titik adalah <em>'sugar'</em> (gula). Gula termasuk benda yang tidak bisa dihitung satuannya (Uncountable Noun).",
+          "<strong>Langkah 2 (Cek Jenis Kalimat):</strong> Kalimat ini adalah kalimat berita positif (bukan kalimat negatif dan bukan kalimat tanya).",
+          "<strong>Langkah 3 (Eliminasi Pilihan):</strong> <em>many</em> dan <em>a few</em> hanya untuk benda yang bisa dihitung. <em>any</em> dipakai untuk kalimat negatif/tanya. Maka <strong>some</strong> (sedikit/beberapa) adalah pilihan yang paling tepat (<strong>C</strong>)."
+        ]
+      },
+      {
+        topic: "Bab 6 • Notice / Functional Text",
+        question: "You see a sign 'KEEP SILENT' on the wall. Where do you usually find this sign?",
+        options: ["A. In the library", "B. In the playground", "C. At the market", "D. At the bus station"],
+        answer: "A. In the library",
+        steps: [
+          "<strong>Langkah 1 (Artikan Tanda Peringatan):</strong> <em>'KEEP SILENT'</em> artinya adalah 'Harap Tenang / Jangan Berisik'.",
+          "<strong>Langkah 2 (Hubungkan dengan Tempat Umum):</strong> Tempat umum manakah yang mewajibkan pengunjungnya untuk tenang agar tidak mengganggu orang lain yang sedang membaca atau belajar?",
+          "<strong>Langkah 3 (Tentukan Jawaban):</strong> Tempat tersebut adalah perpustakaan (<em>In the library</em>). Jadi jawaban yang benar adalah <strong>A</strong>."
+        ]
+      }
+    ];
+
+    // =========================================================================
+    // 3. BANK SOAL LENGKAP (36 NOMOR BERKUALITAS SESUAI KURIKULUM KELAS 6 SD)
+    // =========================================================================
+    const QUESTION_BANK = [
+      // --- BAB 1: SIMPLE PAST TENSE (6 SOAL) ---
+      {
+        id: 1,
+        topic: "Simple Past Tense",
+        question: "My family and I ... to Borobudur Temple last holiday.",
+        options: ["went", "go", "goes", "going"],
+        answer: "went",
+        explanation: "Kata 'last holiday' (liburan lalu) menunjukkan bentuk lampau (Simple Past Tense). Bentuk Verb 2 dari 'go' adalah 'went'."
+      },
+      {
+        id: 2,
+        topic: "Simple Past Tense",
+        question: "Deni did not ... football yesterday because it rained heavily.",
+        options: ["play", "played", "plays", "playing"],
+        answer: "play",
+        explanation: "Pada kalimat negatif Simple Past Tense yang sudah memakai 'did not', kata kerja utamanya kembali ke bentuk dasar (Verb 1), yaitu 'play'."
+      },
+      {
+        id: 3,
+        topic: "Simple Past Tense",
+        question: "... you finish your English homework last night?",
+        options: ["Did", "Do", "Does", "Are"],
+        answer: "Did",
+        explanation: "Keterangan waktu 'last night' (tadi malam) menggunakan kata bantu tanya 'Did' untuk semua subjek."
+      },
+      {
+        id: 4,
+        topic: "Simple Past Tense",
+        question: "Sinta ... a delicious chocolate cake for her mother's birthday two days ago.",
+        options: ["made", "make", "makes", "making"],
+        answer: "made",
+        explanation: "'Two days ago' (dua hari lalu) menandakan kejadian masa lampau. Verb 2 dari 'make' adalah 'made'."
+      },
+      {
+        id: 5,
+        topic: "Simple Past Tense",
+        question: "The students ... very happy during the school trip last week.",
+        options: ["were", "was", "are", "is"],
+        answer: "were",
+        explanation: "Subjek 'The students' berbentuk jamak (lebih dari satu) dan waktunya lampau ('last week'), maka to-be past yang benar adalah 'were'."
+      },
+      {
+        id: 6,
+        topic: "Simple Past Tense",
+        question: "What did Budi do yesterday morning? He ... his bicycle in the yard.",
+        options: ["washed", "wash", "washes", "washing"],
+        answer: "washed",
+        explanation: "Pertanyaan menggunakan 'did' (lampau), sehingga jawabannya menggunakan Verb 2 beraturan (regular verb) yaitu 'washed'."
+      },
+
+      // --- BAB 2: FUTURE TENSE (6 SOAL) ---
+      {
+        id: 7,
+        topic: "Future Tense",
+        question: "We ... visit our grandparents in Bandung next month.",
+        options: ["will", "did", "were", "have"],
+        answer: "will",
+        explanation: "Kata 'next month' (bulan depan) menunjukkan rencana masa depan (Future Tense), sehingga menggunakan 'will' diikuti Verb 1."
+      },
+      {
+        id: 8,
+        topic: "Future Tense",
+        question: "Rani is ... study hard for the final examination next week.",
+        options: ["going to", "went to", "go to", "goes to"],
+        answer: "going to",
+        explanation: "Setelah subjek + to-be ('Rani is'), pola rencana masa depan adalah 'going to' + Verb 1 ('study')."
+      },
+      {
+        id: 9,
+        topic: "Future Tense",
+        question: "I promise I ... come late to school tomorrow.",
+        options: ["will not", "did not", "am not", "was not"],
+        answer: "will not",
+        explanation: "Kata 'tomorrow' (besok) dan ungkapan janji menggunakan 'will not' (won't) yang berarti 'tidak akan'."
+      },
+      {
+        id: 10,
+        topic: "Future Tense",
+        question: "They are going to ... a new tree in the school garden this afternoon.",
+        options: ["plant", "planted", "planting", "plants"],
+        answer: "plant",
+        explanation: "Setelah 'going to' harus selalu diikuti oleh kata kerja dasar (Verb 1) tanpa tambahan akhiran, yaitu 'plant'."
+      },
+      {
+        id: 11,
+        topic: "Future Tense",
+        question: "Where ... Edo go on the next school holiday?",
+        options: ["will", "was", "did", "is"],
+        answer: "will",
+        explanation: "Kata 'next school holiday' (liburan sekolah berikutnya) menanyakan rencana masa depan, sehingga kata bantu yang tepat adalah 'will'."
+      },
+      {
+        id: 12,
+        topic: "Future Tense",
+        question: "My father ... buy a new laptop for me if I get good grades.",
+        options: ["will", "was", "did", "has"],
+        answer: "will",
+        explanation: "Kalimat pengandaian rencana di masa mendatang menggunakan 'will' + Verb 1 ('buy')."
+      },
+
+      // --- BAB 3: DESCRIBING & COMPARISON (6 SOAL) ---
+      {
+        id: 13,
+        topic: "Describing & Comparison",
+        question: "An elephant is ... than a rabbit.",
+        options: ["bigger", "big", "biggest", "the biggest"],
+        answer: "bigger",
+        explanation: "Membandingkan 2 hewan dengan kata kunci 'than' menggunakan bentuk Comparative: 'big' menjadi 'bigger'."
+      },
+      {
+        id: 14,
+        topic: "Describing & Comparison",
+        question: "Mount Everest is ... mountain in the world.",
+        options: ["the highest", "higher", "high", "as high as"],
+        answer: "the highest",
+        explanation: "Menyatakan tingkatan 'paling' di dunia (Superlative) menggunakan 'the + adjective-est', yaitu 'the highest'."
+      },
+      {
+        id: 15,
+        topic: "Describing & Comparison",
+        question: "A diamond ring is ... than a silver ring.",
+        options: ["more expensive", "expensiver", "most expensive", "expensive"],
+        answer: "more expensive",
+        explanation: "'Expensive' adalah kata sifat panjang (3 suku kata), sehingga bentuk Comparative-nya menggunakan 'more expensive'."
+      },
+      {
+        id: 16,
+        topic: "Describing & Comparison",
+        question: "Rina is 145 cm tall. Dina is 145 cm tall. So, Rina is ... Dina.",
+        options: ["as tall as", "taller than", "the tallest", "shorter than"],
+        answer: "as tall as",
+        explanation: "Tinggi Rina dan Dina sama-sama 145 cm. Perbandingan setara menggunakan pola 'as + adjective + as' (as tall as)."
+      },
+      {
+        id: 17,
+        topic: "Describing & Comparison",
+        question: "Mr. Ahmad always helps his neighbors and smiles at everyone. He is a ... man.",
+        options: ["kind", "lazy", "angry", "greedy"],
+        answer: "kind",
+        explanation: "Suka menolong tetangga dan murah senyum menggambarkan sifat baik hati / ramah ('kind')."
+      },
+      {
+        id: 18,
+        topic: "Describing & Comparison",
+        question: "Cheetah can run up to 110 km/hour. It is ... animal on land.",
+        options: ["the fastest", "faster than", "fast", "slower than"],
+        answer: "the fastest",
+        explanation: "Menyatakan hewan tercepat di darat menggunakan bentuk Superlative 'the fastest'."
+      },
+
+      // --- BAB 4: DIRECTIONS & PUBLIC PLACES (6 SOAL) ---
+      {
+        id: 19,
+        topic: "Directions & Public Places",
+        question: "People go to the ... to save their money.",
+        options: ["bank", "bakery", "mosque", "hospital"],
+        answer: "bank",
+        explanation: "Tempat umum untuk menabung uang ('save money') adalah 'bank'."
+      },
+      {
+        id: 20,
+        topic: "Directions & Public Places",
+        question: "The library is ... the canteen and the teacher's office.",
+        options: ["between", "under", "on", "into"],
+        answer: "between",
+        explanation: "Karena menyebutkan dua tempat ('the canteen and the teacher's office'), kata depan yang tepat adalah 'between' (di antara)."
+      },
+      {
+        id: 21,
+        topic: "Directions & Public Places",
+        question: "Tourist: 'Excuse me, how can I get to the post office?' — Beni: 'Go ... this street for 100 meters, then turn right.'",
+        options: ["straight", "between", "behind", "under"],
+        answer: "straight",
+        explanation: "Ungkapan untuk menyuruh berjalan lurus mengikuti jalan adalah 'Go straight'."
+      },
+      {
+        id: 22,
+        topic: "Directions & Public Places",
+        question: "If you are sick and need to see a doctor, you should go to the ...",
+        options: ["hospital", "post office", "police station", "railway station"],
+        answer: "hospital",
+        explanation: "Jika sakit dan perlu menemui dokter, tempat yang dituju adalah rumah sakit ('hospital')."
+      },
+      {
+        id: 23,
+        topic: "Directions & Public Places",
+        question: "What does the traffic sign with an arrow turning to the left mean?",
+        options: ["Turn left", "Turn right", "Go straight", "Stop here"],
+        answer: "Turn left",
+        explanation: "Panah yang berbelok ke kiri dalam bahasa Inggris adalah 'Turn left'."
+      },
+      {
+        id: 24,
+        topic: "Directions & Public Places",
+        question: "We can see many historical things and ancient statues in the ...",
+        options: ["museum", "market", "cinema", "airport"],
+        answer: "museum",
+        explanation: "Tempat menyimpan benda-benda bersejarah ('historical things') adalah 'museum'."
+      },
+
+      // --- BAB 5: FOOD, DRINK & QUANTIFIERS (6 SOAL) ---
+      {
+        id: 25,
+        topic: "Food & Quantifiers",
+        question: "I am very thirsty. I want to drink a ... of cold water.",
+        options: ["glass", "bowl", "plate", "slice"],
+        answer: "glass",
+        explanation: "Satuan takaran yang tepat untuk air minum adalah segelas ('a glass of cold water')."
+      },
+      {
+        id: 26,
+        topic: "Food & Quantifiers",
+        question: "How ... apples are there in the basket?",
+        options: ["many", "much", "any", "little"],
+        answer: "many",
+        explanation: "'Apples' adalah benda yang dapat dihitung (countable noun), maka kata tanya jumlahnya menggunakan 'How many'."
+      },
+      {
+        id: 27,
+        topic: "Food & Quantifiers",
+        question: "Do you have ... orange juice in the refrigerator?",
+        options: ["any", "some", "many", "a"],
+        answer: "any",
+        explanation: "Pada kalimat tanya ('Do you have...?') untuk benda tak terhitung seperti jus, digunakan kata 'any'."
+      },
+      {
+        id: 28,
+        topic: "Food & Quantifiers",
+        question: "Every morning, my father eats a ... of chicken soup for breakfast.",
+        options: ["bowl", "bottle", "cup", "loaf"],
+        answer: "bowl",
+        explanation: "Sup ayam disajikan dalam mangkuk, sehingga takarannya adalah 'a bowl of chicken soup'."
+      },
+      {
+        id: 29,
+        topic: "Food & Quantifiers",
+        question: "Buyer: 'How ... is a kilo of sugar?' — Seller: 'It is Rp 16.000.'",
+        options: ["much", "many", "long", "old"],
+        answer: "much",
+        explanation: "Untuk menanyakan harga barang dalam bahasa Inggris selalu digunakan 'How much'."
+      },
+      {
+        id: 30,
+        topic: "Food & Quantifiers",
+        question: "Lemons and limes taste very ...",
+        options: ["sour", "sweet", "salty", "spicy"],
+        answer: "sour",
+        explanation: "Buah lemon dan jeruk nipis rasanya asam ('sour')."
+      },
+
+      // --- BAB 6: READING COMPREHENSION & SHORT FUNCTIONAL TEXT (6 SOAL) ---
+      {
+        id: 31,
+        topic: "Reading Comprehension",
+        passage: "<strong>Read the text below:</strong><br>Last Sunday, Siti and her family went to Ragunan Zoo. They saw many animals such as elephants, tigers, giraffes, and monkeys. Siti liked the giraffes best because they were very tall and gentle. They took many photos together before going home at 3 p.m.",
+        question: "Why did Siti like the giraffes best?",
+        options: [
+          "Because they were very tall and gentle",
+          "Because they were fierce and loud",
+          "Because they could climb trees",
+          "Because they lived in the water"
+        ],
+        answer: "Because they were very tall and gentle",
+        explanation: "Pada kalimat ketiga bacaan tertulis jelas: 'Siti liked the giraffes best because they were very tall and gentle.'"
+      },
+      {
+        id: 32,
+        topic: "Reading Comprehension",
+        passage: "<strong>Read the text below:</strong><br>Last Sunday, Siti and her family went to Ragunan Zoo. They saw many animals such as elephants, tigers, giraffes, and monkeys. Siti liked the giraffes best because they were very tall and gentle. They took many photos together before going home at 3 p.m.",
+        question: "What time did Siti's family go home from the zoo?",
+        options: ["At 3 p.m.", "At 1 p.m.", "At 5 p.m.", "At 10 a.m."],
+        answer: "At 3 p.m.",
+        explanation: "Kalimat terakhir menyebutkan 'before going home at 3 p.m.' (pulang pada pukul 3 sore)."
+      },
+      {
+        id: 33,
+        topic: "Reading Comprehension",
+        passage: "<strong>Greeting Card:</strong><br><em>Dear Edo,<br>Congratulations on winning the 1st place in the English Storytelling Competition! We are very proud of you. Keep up the great work!<br>Your friends, Class 6A</em>",
+        question: "Why did Class 6A send the card to Edo?",
+        options: [
+          "Because Edo won the English Storytelling Competition",
+          "Because Edo celebrated his birthday",
+          "Because Edo was sick in the hospital",
+          "Because Edo moved to a new school"
+        ],
+        answer: "Because Edo won the English Storytelling Competition",
+        explanation: "Kartu ucapan berisi 'Congratulations on winning the 1st place in the English Storytelling Competition' (selamat atas juara 1 lomba bercerita bahasa Inggris)."
+      },
+      {
+        id: 34,
+        topic: "Reading Comprehension",
+        passage: "<strong>Notice:</strong><br><em>PLEASE THROW THE TRASH INTO THE DUSTBIN!</em>",
+        question: "What does the notice mean?",
+        options: [
+          "We must keep the place clean by using the trash bin",
+          "We are allowed to litter anywhere",
+          "We should burn the trash in the yard",
+          "We must buy a new dustbin"
+        ],
+        answer: "We must keep the place clean by using the trash bin",
+        explanation: "Peringatan 'Please throw the trash into the dustbin' berarti kita harus membuang sampah ke tempat sampah agar lingkungan tetap bersih."
+      },
+      {
+        id: 35,
+        topic: "Reading Comprehension",
+        passage: "<strong>Announcement:</strong><br><em>Attention all Grade 6 students! Tomorrow, Friday, there will be a flag ceremony at 7 a.m. Please wear your complete white-and-red uniform and school cap. Thank you.</em>",
+        question: "What uniform must the students wear tomorrow?",
+        options: [
+          "White-and-red uniform and school cap",
+          "Scout uniform",
+          "Sports uniform",
+          "Batik uniform"
+        ],
+        answer: "White-and-red uniform and school cap",
+        explanation: "Pada pengumuman tertulis: 'Please wear your complete white-and-red uniform and school cap' (seragam putih-merah lengkap dan topi sekolah)."
+      },
+      {
+        id: 36,
+        topic: "Reading Comprehension",
+        passage: "<strong>Short Text:</strong><br>Komodo dragon is the largest lizard in the world. It lives on Komodo Island in East Nusa Tenggara, Indonesia. It has a long tail, sharp claws, and rough skin.",
+        question: "Where does the Komodo dragon live?",
+        options: [
+          "In East Nusa Tenggara, Indonesia",
+          "In West Java, Indonesia",
+          "In North Sumatra, Indonesia",
+          "In South Kalimantan, Indonesia"
+        ],
+        answer: "In East Nusa Tenggara, Indonesia",
+        explanation: "Kalimat kedua menyatakan 'It lives on Komodo Island in East Nusa Tenggara, Indonesia' (Nusa Tenggara Timur)."
+      }
+    ];
+
+    // =========================================================================
+    // 4. STATE APLIKASI & PENYIMPANAN LOKAL (LOCALSTORAGE)
+    // =========================================================================
+    const STORAGE_KEY = "ruang_belajar_inggris_sd6_v1";
+
+    let appState = {
+      studentName: "Siswa Kelas 6",
+      completedChapters: [], // array of chapter IDs e.g. ["bab-1"]
+      quizHistory: []        // array of { date, topic, score, correct, total, mode }
+    };
+
+    // State Sesi Kuis Aktif
+    let activeChapterId = "bab-1";
+    let selectedQuestionCount = 10;
+    let currentQuiz = {
+      questions: [],       // soal yang sudah diacak + pilihan jawaban sudah diacak
+      userAnswers: {},     // index -> string pilihan yang dipilih user
+      currentIndex: 0,
+      topicLabel: "Semua Bab",
+      isRetryMode: false
+    };
+
+    // Muat data dari localStorage saat aplikasi dibuka
+    function loadState() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          appState = { ...appState, ...parsed };
+        }
+      } catch (e) {
+        console.warn("Gagal membaca localStorage:", e);
+      }
+    }
+
+    function saveState() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+      } catch (e) {
+        console.warn("Gagal menyimpan ke localStorage:", e);
+      }
+      refreshDashboardUI();
+    }
+
+    // =========================================================================
+    // 5. UTILITAS UI: NOTIFIKASI TOAST, MODAL KONFIRMASI, & TEXT-TO-SPEECH
+    // =========================================================================
+    function showToast(message, type = "info") {
+      const container = document.getElementById("toast-container");
+      const toast = document.createElement("div");
+
+      const styles = {
+        success: "bg-emerald-600 text-white border-emerald-500",
+        error: "bg-rose-600 text-white border-rose-500",
+        warning: "bg-amber-500 text-white border-amber-400",
+        info: "bg-slate-800 text-white border-slate-700"
+      };
+      const icons = {
+        success: "fa-circle-check",
+        error: "fa-circle-exclamation",
+        warning: "fa-triangle-exclamation",
+        info: "fa-circle-info"
+      };
+
+      toast.className = `pointer-events-auto flex items-center gap-3 px-4 py-3 rounded-2xl shadow-xl border text-sm font-semibold fade-in ${styles[type] || styles.info}`;
+      toast.innerHTML = `<i class="fa-solid ${icons[type] || icons.info} text-base"></i><span>${message}</span>`;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.transform = "translateY(-6px)";
+        toast.style.transition = "all 0.25s ease";
+        setTimeout(() => toast.remove(), 250);
+      }, 3000);
+    }
+
+    function showConfirmDialog(title, message, onConfirm) {
+      const modal = document.getElementById("confirm-modal");
+      document.getElementById("confirm-title").textContent = title;
+      document.getElementById("confirm-message").textContent = message;
+
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+
+      const okBtn = document.getElementById("confirm-ok-btn");
+      const cancelBtn = document.getElementById("confirm-cancel-btn");
+
+      const cleanup = () => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        okBtn.onclick = null;
+        cancelBtn.onclick = null;
+      };
+
+      cancelBtn.onclick = cleanup;
+      okBtn.onclick = () => {
+        cleanup();
+        onConfirm();
+      };
+    }
+
+    // Fitur Pengucapan Bahasa Inggris (Browser Web Speech API)
+    function speakEnglish(text) {
+      if (!("speechSynthesis" in window)) {
+        showToast("Browser kamu belum mendukung fitur suara otomatis.", "warning");
+        return;
+      }
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = "en-US";
+      utterance.rate = 0.9; // Sedikit lebih lambat agar jelas untuk siswa SD
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // =========================================================================
+    // 6. NAVIGASI TAB & RENDER BERANDA
+    // =========================================================================
+    function switchTab(tabName) {
+      // Sembunyikan semua konten tab
+      document.querySelectorAll(".tab-content").forEach(el => el.classList.add("hidden"));
+      // Reset tombol navigasi
+      document.querySelectorAll(".nav-btn").forEach(btn => {
+        btn.classList.remove("tab-active");
+        btn.classList.add("bg-slate-100", "text-slate-600", "hover:bg-slate-200");
+      });
+
+      // Tampilkan tab terpilih
+      const targetTab = document.getElementById(`tab-${tabName}`);
+      if (targetTab) targetTab.classList.remove("hidden");
+
+      const activeBtn = document.getElementById(`nav-${tabName}`);
+      if (activeBtn) {
+        activeBtn.classList.add("tab-active");
+        activeBtn.classList.remove("bg-slate-100", "text-slate-600", "hover:bg-slate-200");
+      }
+
+      if (tabName === "beranda") refreshDashboardUI();
+      if (tabName === "materi") renderMaterialsSection();
+      if (tabName === "riwayat") renderHistorySection();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function saveStudentName() {
+      const input = document.getElementById("input-student-name");
+      const val = input.value.trim();
+      if (!val) {
+        showToast("Tuliskan namamu terlebih dahulu ya!", "warning");
+        return;
+      }
+      appState.studentName = val;
+      saveState();
+      showToast(`Halo ${val}! Namamu berhasil disimpan.`, "success");
+    }
+
+    function refreshDashboardUI() {
+      document.getElementById("header-student-name").textContent = appState.studentName;
+      document.getElementById("hero-student-name").textContent = appState.studentName;
+      document.getElementById("input-student-name").value = appState.studentName === "Siswa Kelas 6" ? "" : appState.studentName;
+
+      // Hitung statistik
+      const completedCount = appState.completedChapters.length;
+      const quizCount = appState.quizHistory.length;
+
+      document.getElementById("stat-materi").textContent = completedCount;
+      document.getElementById("stat-kuis").textContent = quizCount;
+
+      if (quizCount > 0) {
+        const scores = appState.quizHistory.map(item => item.score);
+        const maxScore = Math.max(...scores);
+        const avgScore = Math.round(scores.reduce((a, b) => a + b, 0) / quizCount);
+        document.getElementById("stat-tertinggi").textContent = maxScore;
+        document.getElementById("stat-rata").textContent = avgScore;
+      } else {
+        document.getElementById("stat-tertinggi").textContent = "-";
+        document.getElementById("stat-rata").textContent = "-";
+      }
+    }
+
+    // =========================================================================
+    // 7. RENDER MATERI BELAJAR INTERAKTIF
+    // =========================================================================
+    function renderMaterialsSection() {
+      const sidebar = document.getElementById("materi-sidebar");
+      const progressText = document.getElementById("materi-progress-text");
+      progressText.textContent = `${appState.completedChapters.length} dari ${MATERIALS_DATA.length} Bab Selesai`;
+
+      sidebar.innerHTML = MATERIALS_DATA.map(ch => {
+        const isDone = appState.completedChapters.includes(ch.id);
+        const isSelected = ch.id === activeChapterId;
+        return `
+          <button onclick="selectChapter('${ch.id}')"
+            class="w-full text-left p-4 rounded-2xl border transition flex items-center justify-between gap-3 ${
+              isSelected
+                ? "bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/20"
+                : "bg-white text-slate-700 border-slate-200/80 hover:border-blue-300 hover:bg-blue-50/40"
+            }">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${
+                isSelected ? "bg-white/20 text-white" : "bg-blue-100 text-blue-600"
+              }">
+                <i class="fa-solid ${ch.icon}"></i>
+              </div>
+              <div class="truncate">
+                <p class="text-[11px] font-bold uppercase tracking-wider ${isSelected ? "text-blue-100" : "text-blue-600"}">${ch.number}</p>
+                <p class="font-bold text-sm truncate">${ch.title}</p>
+              </div>
+            </div>
+            ${isDone
+              ? `<span class="w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0 ${isSelected ? "bg-emerald-400 text-slate-900" : "bg-emerald-100 text-emerald-600"}" title="Sudah Dipelajari"><i class="fa-solid fa-check"></i></span>`
+              : `<span class="w-6 h-6 rounded-full border shrink-0 ${isSelected ? "border-white/40" : "border-slate-300"}"></span>`
+            }
+          </button>
+        `;
+      }).join("");
+
+      renderChapterReader();
+    }
+
+    function selectChapter(chapterId) {
+      activeChapterId = chapterId;
+      renderMaterialsSection();
+    }
+
+    function renderChapterReader() {
+      const reader = document.getElementById("materi-reader");
+      const ch = MATERIALS_DATA.find(item => item.id === activeChapterId) || MATERIALS_DATA[0];
+      const isDone = appState.completedChapters.includes(ch.id);
+
+      const vocabHtml = ch.vocab.map(v => {
+        const safeWord = v.en.split("(")[0].trim().replace(/'/g, "\\'");
+        const safeExample = v.example.replace(/'/g, "\\'");
+        return `
+          <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-extrabold text-slate-800 text-sm">${v.en}</span>
+                <span class="text-xs text-slate-400">•</span>
+                <span class="text-xs font-semibold text-blue-600">${v.id}</span>
+              </div>
+              <p class="text-xs text-slate-600 italic mt-0.5">"${v.example}"</p>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <button onclick="speakEnglish('${safeWord}')" class="px-3 py-1.5 rounded-xl bg-white hover:bg-blue-50 text-blue-600 border border-slate-200 text-xs font-bold transition" title="Dengarkan kata">
+                <i class="fa-solid fa-volume-high mr-1"></i> Kata
+              </button>
+              <button onclick="speakEnglish('${safeExample}')" class="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition" title="Dengarkan kalimat contoh">
+                <i class="fa-solid fa-play mr-1"></i> Kalimat
+              </button>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      reader.innerHTML = `
+        <div class="space-y-6 fade-in">
+          <div class="border-b border-slate-100 pb-4">
+            <span class="inline-block px-3 py-1 rounded-xl bg-blue-100 text-blue-700 text-xs font-extrabold mb-2">${ch.number}</span>
+            <h3 class="text-2xl font-extrabold text-slate-800">${ch.title}</h3>
+            <p class="text-sm text-slate-500 mt-1 leading-relaxed">${ch.summary}</p>
+          </div>
+
+          <div class="text-slate-700 text-sm sm:text-base leading-relaxed">
+            ${ch.explanation}
+          </div>
+
+          <div class="space-y-3">
+            <h4 class="font-extrabold text-slate-800 text-base flex items-center gap-2">
+              <i class="fa-solid fa-headphones text-blue-600"></i> Kosakata Penting & Pelafalan
+            </h4>
+            <div class="space-y-2.5">
+              ${vocabHtml}
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <button onclick="toggleChapterCompleted('${ch.id}')"
+              class="w-full sm:w-auto px-6 py-3.5 rounded-2xl font-extrabold text-sm transition flex items-center justify-center gap-2 ${
+                isDone
+                  ? "bg-emerald-100 text-emerald-700 border border-emerald-300"
+                  : "bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg shadow-emerald-600/20"
+              }">
+              <i class="fa-solid ${isDone ? "fa-circle-check" : "fa-check"}"></i>
+              ${isDone ? "Sudah Selesai Dipelajari" : "Tandai Sudah Dipelajari"}
+            </button>
+
+            <button onclick="switchTab('latihan')" class="w-full sm:w-auto px-5 py-3.5 rounded-2xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-sm transition">
+              Uji Pemahaman di Latihan Soal <i class="fa-solid fa-arrow-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+      `;
+    }
+
+    function toggleChapterCompleted(chapterId) {
+      const idx = appState.completedChapters.indexOf(chapterId);
+      if (idx === -1) {
+        appState.completedChapters.push(chapterId);
+        showToast("Hebat! Bab ini ditandai sudah dipelajari.", "success");
+      } else {
+        appState.completedChapters.splice(idx, 1);
+        showToast("Status bab dikembalikan menjadi belum selesai.", "info");
+      }
+      saveState();
+      renderMaterialsSection();
+    }
+
+    // =========================================================================
+    // 8. RENDER CONTOH SOAL & PEMBAHASAN BERTAHAP
+    // =========================================================================
+    function renderWorkedExamples() {
+      const container = document.getElementById("contoh-list");
+      container.innerHTML = WORKED_EXAMPLES.map((ex, index) => `
+        <div class="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-sm flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-xl bg-amber-100 text-amber-800 text-xs font-extrabold">Contoh #${index + 1}</span>
+              <span class="text-xs font-bold text-slate-500">${ex.topic}</span>
+            </div>
+            <p class="font-bold text-slate-800 text-base leading-relaxed">${ex.question}</p>
+            <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-600">
+              ${ex.options.map(opt => `
+                <div class="px-3 py-2 rounded-xl border ${opt === ex.answer ? "bg-emerald-50 border-emerald-300 text-emerald-800 font-bold" : "bg-slate-50 border-slate-200"}">
+                  ${opt}
+                </div>
+              `).join("")}
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="toggleExampleSteps(${index})" id="btn-step-${index}"
+              class="w-full py-2.5 px-4 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold text-xs transition flex items-center justify-between">
+              <span><i class="fa-solid fa-stairs mr-1.5"></i> Lihat Langkah Pembahasan</span>
+              <i class="fa-solid fa-chevron-down" id="icon-step-${index}"></i>
+            </button>
+            <div id="steps-box-${index}" class="hidden mt-3 p-4 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-2 text-xs text-slate-700 leading-relaxed">
+              ${ex.steps.map(st => `<p>${st}</p>`).join("")}
+              <div class="pt-2 mt-2 border-t border-slate-200 font-extrabold text-emerald-700">
+                <i class="fa-solid fa-circle-check mr-1"></i> Jawaban Benar: ${ex.answer}
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function toggleExampleSteps(index) {
+      const box = document.getElementById(`steps-box-${index}`);
+      const icon = document.getElementById(`icon-step-${index}`);
+      const isHidden = box.classList.contains("hidden");
+      if (isHidden) {
+        box.classList.remove("hidden");
+        icon.classList.replace("fa-chevron-down", "fa-chevron-up");
+      } else {
+        box.classList.add("hidden");
+        icon.classList.replace("fa-chevron-up", "fa-chevron-down");
+      }
+    }
+
+    // =========================================================================
+    // 9. SISTEM KUIS & EVALUASI (SHUFFLE SOAL + OPSI, SKORING, ULANGI YANG SALAH)
+    // =========================================================================
+    // Algoritma Fisher-Yates Shuffle
+    function shuffleArray(array) {
+      const arr = [...array];
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function selectQuestionCount(count) {
+      selectedQuestionCount = count;
+      [10, 20, 30].forEach(num => {
+        const btn = document.getElementById(`count-btn-${num}`);
+        if (num === count) {
+          btn.className = "count-btn p-4 rounded-2xl border-2 border-blue-600 bg-blue-50 text-blue-700 font-extrabold text-center transition";
+        } else {
+          btn.className = "count-btn p-4 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 hover:border-blue-300 font-extrabold text-center transition";
+        }
+      });
+      updateAvailableQuestionHint();
+    }
+
+    function updateAvailableQuestionHint() {
+      const topic = document.getElementById("quiz-topic-select").value;
+      const filtered = topic === "all"
+        ? QUESTION_BANK
+        : QUESTION_BANK.filter(q => q.topic === topic);
+
+      document.getElementById("topic-hint-text").textContent = `Tersedia ${filtered.length} soal dalam bank soal untuk topik ini.`;
+      const note = document.getElementById("count-adjust-note");
+      if (topic !== "all" && selectedQuestionCount > filtered.length) {
+        note.classList.remove("hidden");
+      } else {
+        note.classList.add("hidden");
+      }
+    }
+
+    function startQuiz(customQuestions = null, isRetry = false) {
+      let pool = [];
+      let topicLabel = "";
+
+      if (customQuestions && customQuestions.length > 0) {
+        pool = customQuestions;
+        topicLabel = "Ulangi Soal yang Salah";
+      } else {
+        const topicSelect = document.getElementById("quiz-topic-select");
+        const topicVal = topicSelect.value;
+        topicLabel = topicVal === "all" ? "Semua Bab (Campuran)" : topicVal;
+
+        const filtered = topicVal === "all"
+          ? QUESTION_BANK
+          : QUESTION_BANK.filter(q => q.topic === topicVal);
+
+        const shuffledPool = shuffleArray(filtered);
+        const takeCount = Math.min(selectedQuestionCount, shuffledPool.length);
+        pool = shuffledPool.slice(0, takeCount);
+      }
+
+      // Acak urutan pilihan jawaban (A, B, C, D) pada setiap soal
+      const preparedQuestions = shuffleArray(pool).map(q => ({
+        ...q,
+        shuffledOptions: shuffleArray(q.options)
+      }));
+
+      currentQuiz = {
+        questions: preparedQuestions,
+        userAnswers: {},
+        currentIndex: 0,
+        topicLabel: topicLabel,
+        isRetryMode: isRetry
+      };
+
+      // Tampilkan layar kuis aktif
+      document.getElementById("quiz-setup-view").classList.add("hidden");
+      document.getElementById("quiz-result-view").classList.add("hidden");
+      document.getElementById("quiz-active-view").classList.remove("hidden");
+
+      const badge = document.getElementById("quiz-mode-badge");
+      if (isRetry) {
+        badge.textContent = "Mode Perbaikan Soal Salah";
+        badge.className = "px-3 py-1 rounded-xl bg-amber-100 text-amber-800 text-xs font-extrabold";
+      } else {
+        badge.textContent = topicLabel;
+        badge.className = "px-3 py-1 rounded-xl bg-blue-100 text-blue-700 text-xs font-extrabold";
+      }
+
+      renderActiveQuestion();
+    }
+
+    function renderActiveQuestion() {
+      const total = currentQuiz.questions.length;
+      const idx = currentQuiz.currentIndex;
+      const q = currentQuiz.questions[idx];
+
+      document.getElementById("quiz-current-num").textContent = idx + 1;
+      document.getElementById("quiz-total-num").textContent = total;
+      document.getElementById("quiz-progress-bar").style.width = `${((idx + 1) / total) * 100}%`;
+      document.getElementById("question-topic-tag").textContent = q.topic;
+
+      // Bacaan pendukung jika soal Reading Comprehension
+      const passageBox = document.getElementById("question-passage-box");
+      if (q.passage) {
+        passageBox.innerHTML = q.passage;
+        passageBox.classList.remove("hidden");
+      } else {
+        passageBox.classList.add("hidden");
+      }
+
+      document.getElementById("question-text").textContent = `${idx + 1}. ${q.question}`;
+
+      // Render pilihan jawaban A, B, C, D
+      const letters = ["A", "B", "C", "D"];
+      const selectedAns = currentQuiz.userAnswers[idx];
+
+      const optionsHtml = q.shuffledOptions.map((optText, optIdx) => {
+        const isChosen = selectedAns === optText;
+        const safeOpt = optText.replace(/'/g, "\\'");
+        return `
+          <button type="button" onclick="selectOption('${safeOpt}')"
+            class="w-full text-left p-4 rounded-2xl border-2 transition flex items-center gap-3.5 ${
+              isChosen
+                ? "border-blue-600 bg-blue-50/90 text-blue-900 shadow-sm"
+                : "border-slate-200 bg-white hover:border-blue-300 hover:bg-slate-50 text-slate-700"
+            }">
+            <span class="w-9 h-9 rounded-xl flex items-center justify-center font-extrabold text-sm shrink-0 ${
+              isChosen ? "bg-blue-600 text-white" : "bg-slate-100 text-slate-600"
+            }">
+              ${letters[optIdx]}
+            </span>
+            <span class="font-semibold text-sm sm:text-base">${optText}</span>
+          </button>
+        `;
+      }).join("");
+
+      document.getElementById("options-container").innerHTML = optionsHtml;
+
+      // Render pill nomor cepat
+      const pillsHtml = currentQuiz.questions.map((_, pIdx) => {
+        const answered = currentQuiz.userAnswers[pIdx] !== undefined;
+        const current = pIdx === idx;
+        return `
+          <button onclick="jumpToQuestion(${pIdx})"
+            class="w-7 h-7 rounded-lg text-xs font-bold transition ${
+              current
+                ? "bg-blue-600 text-white ring-2 ring-blue-300"
+                : answered
+                  ? "bg-emerald-100 text-emerald-700 border border-emerald-300"
+                  : "bg-slate-100 text-slate-500 hover:bg-slate-200"
+            }">
+            ${pIdx + 1}
+          </button>
+        `;
+      }).join("");
+      document.getElementById("quiz-number-pills").innerHTML = pillsHtml;
+
+      // Atur tombol Sebelumnya / Selanjutnya / Selesai
+      document.getElementById("btn-prev-q").disabled = idx === 0;
+      if (idx === total - 1) {
+        document.getElementById("btn-next-q").classList.add("hidden");
+        document.getElementById("btn-finish-q").classList.remove("hidden");
+      } else {
+        document.getElementById("btn-next-q").classList.remove("hidden");
+        document.getElementById("btn-finish-q").classList.add("hidden");
+      }
+    }
+
+    function selectOption(optionText) {
+      currentQuiz.userAnswers[currentQuiz.currentIndex] = optionText;
+      renderActiveQuestion();
+    }
+
+    function jumpToQuestion(index) {
+      currentQuiz.currentIndex = index;
+      renderActiveQuestion();
+    }
+
+    function prevQuestion() {
+      if (currentQuiz.currentIndex > 0) {
+        currentQuiz.currentIndex--;
+        renderActiveQuestion();
+      }
+    }
+
+    function nextQuestion() {
+      if (currentQuiz.currentIndex < currentQuiz.questions.length - 1) {
+        currentQuiz.currentIndex++;
+        renderActiveQuestion();
+      }
+    }
+
+    function speakCurrentQuestion() {
+      const q = currentQuiz.questions[currentQuiz.currentIndex];
+      const cleanQuestion = q.question.replace(/\.\.\./g, "blank");
+      speakEnglish(cleanQuestion);
+    }
+
+    function finishQuizConfirm() {
+      const total = currentQuiz.questions.length;
+      const answeredCount = Object.keys(currentQuiz.userAnswers).length;
+      if (answeredCount < total) {
+        const unanswered = total - answeredCount;
+        showConfirmDialog(
+          "Masih Ada Soal Kosong",
+          `Kamu baru menjawab ${answeredCount} dari ${total} soal (${unanswered} soal belum dijawab). Tetap kumpulkan sekarang?`,
+          evaluateQuiz
+        );
+      } else {
+        evaluateQuiz();
+      }
+    }
+
+    // Koreksi Otomatis & Hitung Nilai
+    let lastWrongQuestions = [];
+
+    function evaluateQuiz() {
+      const total = currentQuiz.questions.length;
+      let correctCount = 0;
+      lastWrongQuestions = [];
+
+      const reviewHtml = currentQuiz.questions.map((q, idx) => {
+        const userAns = currentQuiz.userAnswers[idx];
+        const isCorrect = userAns === q.answer;
+        if (isCorrect) {
+          correctCount++;
+        } else {
+          lastWrongQuestions.push(q);
+        }
+
+        return `
+          <div class="bg-white rounded-3xl p-5 sm:p-6 border-2 ${isCorrect ? "border-emerald-200" : "border-rose-200"} shadow-sm space-y-3">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs font-extrabold px-3 py-1 rounded-xl ${isCorrect ? "bg-emerald-100 text-emerald-700" : "bg-rose-100 text-rose-700"}">
+                ${isCorrect ? '<i class="fa-solid fa-check mr-1"></i> Nomor ' + (idx + 1) + ' — Benar' : '<i class="fa-solid fa-xmark mr-1"></i> Nomor ' + (idx + 1) + ' — Perlu Diperbaiki'}
+              </span>
+              <span class="text-xs font-semibold text-slate-400">${q.topic}</span>
+            </div>
+
+            ${q.passage ? `<div class="p-3 rounded-xl bg-slate-50 text-xs text-slate-600 border border-slate-200/70">${q.passage}</div>` : ""}
+
+            <p class="font-bold text-slate-800 text-sm sm:text-base">${q.question}</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+              <div class="p-3 rounded-xl ${isCorrect ? "bg-emerald-50 text-emerald-800 border border-emerald-200" : "bg-rose-50 text-rose-800 border border-rose-200"}">
+                <span class="block font-bold opacity-75">Jawabanmu:</span>
+                <span class="font-extrabold text-sm">${userAns ? userAns : "(Tidak dijawab)"}</span>
+              </div>
+              <div class="p-3 rounded-xl bg-blue-50 text-blue-900 border border-blue-200">
+                <span class="block font-bold opacity-75">Kunci Jawaban Benar:</span>
+                <span class="font-extrabold text-sm">${q.answer}</span>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200/80 text-xs text-slate-700 leading-relaxed">
+              <strong class="text-amber-800"><i class="fa-solid fa-lightbulb mr-1"></i> Pembahasan:</strong> ${q.explanation}
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      const wrongCount = total - correctCount;
+      const score = Math.round((correctCount / total) * 100);
+
+      // Simpan hasil ke localStorage
+      const now = new Date();
+      const dateStr = now.toLocaleDateString("id-ID", {
+        day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit"
+      });
+
+      appState.quizHistory.unshift({
+        date: dateStr,
+        topic: currentQuiz.topicLabel,
+        score: score,
+        correct: correctCount,
+        total: total,
+        isRetry: currentQuiz.isRetryMode
+      });
+      saveState();
+
+      // Update tampilan hasil
+      document.getElementById("quiz-active-view").classList.add("hidden");
+      document.getElementById("quiz-result-view").classList.remove("hidden");
+
+      document.getElementById("result-score-value").textContent = score;
+      document.getElementById("res-total").textContent = total;
+      document.getElementById("res-correct").textContent = correctCount;
+      document.getElementById("res-wrong").textContent = wrongCount;
+
+      const feedbackEl = document.getElementById("result-feedback-text");
+      const scoreEl = document.getElementById("result-score-value");
+      if (score >= 85) {
+        feedbackEl.textContent = "Luar Biasa! Kamu sangat menguasai materi Bahasa Inggris ini! 🌟";
+        scoreEl.className = "text-5xl sm:text-6xl font-black text-emerald-600 my-1";
+      } else if (score >= 70) {
+        feedbackEl.textContent = "Bagus Sekali! Terus berlatih agar nilaimu semakin sempurna! 👏";
+        scoreEl.className = "text-5xl sm:text-6xl font-black text-blue-600 my-1";
+      } else {
+        feedbackEl.textContent = "Tetap Semangat! Yuk baca pembahasannya dan ulangi soal yang salah! 💪";
+        scoreEl.className = "text-5xl sm:text-6xl font-black text-amber-500 my-1";
+      }
+
+      // Tombol Ulangi Soal yang Salah
+      const retryBtn = document.getElementById("btn-retry-wrong");
+      if (wrongCount > 0) {
+        retryBtn.classList.remove("hidden");
+        document.getElementById("retry-wrong-count").textContent = wrongCount;
+      } else {
+        retryBtn.classList.add("hidden");
+      }
+
+      document.getElementById("result-review-list").innerHTML = reviewHtml;
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function retryWrongQuestions() {
+      if (lastWrongQuestions.length === 0) return;
+      showToast(`Memulai latihan ulang untuk ${lastWrongQuestions.length} soal yang salah!`, "info");
+      startQuiz(lastWrongQuestions, true);
+    }
+
+    function resetToQuizSetup() {
+      document.getElementById("quiz-active-view").classList.add("hidden");
+      document.getElementById("quiz-result-view").classList.add("hidden");
+      document.getElementById("quiz-setup-view").classList.remove("hidden");
+    }
+
+    // =========================================================================
+    // 10. RIWAYAT BELAJAR, RESET PROGRES, & UNDUH FILE HTML MANDIRI
+    // =========================================================================
+    function renderHistorySection() {
+      // Status 6 Bab
+      const chaptersGrid = document.getElementById("history-chapters-grid");
+      chaptersGrid.innerHTML = MATERIALS_DATA.map(ch => {
+        const isDone = appState.completedChapters.includes(ch.id);
+        return `
+          <div class="p-4 rounded-2xl border ${isDone ? "bg-emerald-50/70 border-emerald-200" : "bg-slate-50 border-slate-200/70"} flex items-center justify-between gap-2">
+            <div class="min-w-0">
+              <p class="text-[11px] font-bold text-slate-500">${ch.number}</p>
+              <p class="font-bold text-sm text-slate-800 truncate">${ch.title}</p>
+            </div>
+            <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold shrink-0 ${isDone ? "bg-emerald-600 text-white" : "bg-slate-200 text-slate-600"}">
+              ${isDone ? "Selesai" : "Belum"}
+            </span>
+          </div>
+        `;
+      }).join("");
+
+      // Daftar Riwayat Nilai Kuis
+      const quizList = document.getElementById("history-quiz-list");
+      if (appState.quizHistory.length === 0) {
+        quizList.innerHTML = `
+          <div class="text-center py-10 text-slate-400 space-y-2">
+            <i class="fa-solid fa-folder-open text-4xl"></i>
+            <p class="text-sm font-semibold">Belum ada riwayat latihan soal.</p>
+            <button onclick="switchTab('latihan')" class="mt-2 px-4 py-2 rounded-xl bg-blue-600 text-white text-xs font-bold">Mulai Latihan Pertama</button>
+          </div>
+        `;
+        return;
+      }
+
+      quizList.innerHTML = appState.quizHistory.map((item, idx) => `
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold text-slate-400">#${appState.quizHistory.length - idx}</span>
+              <span class="font-extrabold text-sm text-slate-800">${item.topic}</span>
+              ${item.isRetry ? '<span class="px-2 py-0.5 rounded-md bg-amber-100 text-amber-800 text-[10px] font-bold">Perbaikan</span>' : ""}
+            </div>
+            <p class="text-xs text-slate-500 mt-0.5"><i class="fa-regular fa-clock mr-1"></i> ${item.date} • Benar ${item.correct} dari ${item.total} soal</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="px-4 py-1.5 rounded-xl font-black text-base ${
+              item.score >= 80 ? "bg-emerald-100 text-emerald-700" : item.score >= 65 ? "bg-blue-100 text-blue-700" : "bg-amber-100 text-amber-700"
+            }">
+              Nilai: ${item.score}
+            </div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function confirmResetProgress() {
+      showConfirmDialog(
+        "Reset Semua Progres Belajar?",
+        "Semua catatan bab yang sudah dibaca dan riwayat nilai latihan di perangkat ini akan dihapus permanen. Lanjutkan?",
+        () => {
+          appState = {
+            studentName: appState.studentName,
+            completedChapters: [],
+            quizHistory: []
+          };
+          saveState();
+          renderHistorySection();
+          renderMaterialsSection();
+          showToast("Semua progres belajar berhasil direset.", "info");
+        }
+      );
+    }
+
+    // Fitur Ekspor/Unduh File index.html siap deploy ke GitHub Pages
+    function downloadStandaloneHTML() {
+      try {
+        const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+        const blob = new Blob([htmlContent], { type: "text/html;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "index.html";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast("File index.html berhasil diunduh! Siap diunggah ke GitHub Pages.", "success");
+      } catch (e) {
+        showToast("Gagal mengunduh file.", "error");
+      }
+    }
+
+    // =========================================================================
+    // 11. INISIALISASI APLIKASI SAAT HALAMAN DIMUAT
+    // =========================================================================
+    window.addEventListener("DOMContentLoaded", () => {
+      loadState();
+      refreshDashboardUI();
+      renderMaterialsSection();
+      renderWorkedExamples();
+      updateAvailableQuestionHint();
+    });
+  </script>
+
+</body></html>
